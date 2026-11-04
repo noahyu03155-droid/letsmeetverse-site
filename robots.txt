@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://letsmeetverse.com/sitemap.xml

@@ -4,163 +4,222 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>LetsMeetVerse · A cozy life in real Los Angeles</title>
-  <meta name="description" content="LetsMeetVerse is a cozy chibi life sim set in real Los Angeles: make your character, move into your own studio, get a job, shop and meet friends. Play free in your browser or download for Windows.">
-  <meta name="theme-color" content="#FFE3EC">
+  <meta name="description" content="LetsMeetVerse is a cozy chibi life sim set in real Los Angeles. Move into your own starter studio, make friends, work shifts, decorate and explore Santa Monica, Hollywood, Koreatown and Downtown. Play free in your browser or install it on Windows.">
+  <meta name="theme-color" content="#E4F4FE">
   <link rel="canonical" href="https://letsmeetverse.com/">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/icon-192.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LetsMeetVerse">
   <meta property="og:title" content="LetsMeetVerse · A cozy life in real Los Angeles">
-  <meta property="og:description" content="Make your little you, move into your own studio, find a job, shop the neighborhood and meet new friends.">
+  <meta property="og:description" content="Get the keys to your own starter studio in LA, make friends, work, decorate and explore real neighborhoods.">
   <meta property="og:url" content="https://letsmeetverse.com/">
   <meta property="og:image" content="https://letsmeetverse.com/assets/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="fonts/fredoka-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" media="(max-width: 700px)" imagesrcset="assets/art/banner-m-480.webp 480w, assets/art/banner-m-800.webp 800w" imagesizes="100vw">
+  <link rel="preload" as="image" type="image/webp" media="(min-width: 701px)" imagesrcset="assets/art/banner-960.webp 960w, assets/art/banner-1600.webp 1600w" imagesizes="100vw">
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="nav" id="top">
-    <a class="nav-logo" href="#top" aria-label="LetsMeetVerse">
-      <span class="pill pill-sm" aria-hidden="true"><b class="p-lets">Lets</b><b class="p-meet">Meet</b><b class="p-verse">Verse</b></span>
+    <a class="brand" href="#top">
+      <span class="word" aria-hidden="true"><span class="w1" data-t="Lets">Lets</span><span class="w2" data-t="Meet">Meet</span><span class="w3" data-t="Verse">Verse</span></span>
+      <span class="sr">LetsMeetVerse</span>
     </a>
     <nav class="nav-links" aria-label="Sections">
-      <a href="#features" data-i18n="navFeatures">Features</a>
-      <a href="#shots" data-i18n="navShots">Screenshots</a>
+      <a href="#neighborhoods" data-i18n="navHoods">Neighborhoods</a>
+      <a href="#ways" data-i18n="navWays">How to play</a>
       <a href="#download" data-i18n="navDownload">Download</a>
     </nav>
     <div class="nav-right">
       <div class="lang" role="group" aria-label="Language / 语言">
         <button type="button" data-lang="en" aria-pressed="true">EN</button>
-        <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+        <button type="button" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
       </div>
-      <a class="btn btn-pink btn-sm" href="play/" data-i18n="navPlay">Play now</a>
+      <a class="btn btn-pink btn-sm nav-play" href="play/" data-i18n="navPlay">Play now</a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow"><img src="assets/icons/palm_tree.png" alt="" width="28" height="28"><span data-i18n="eyebrow">A cozy life sim in real Los Angeles</span></p>
-          <h1 class="logo">
-            <span class="pill" aria-hidden="true"><b class="p-lets">Lets</b><b class="p-meet">Meet</b><b class="p-verse">Verse</b></span>
-            <span class="sr">LetsMeetVerse</span>
-          </h1>
-          <p class="tagline" data-i18n="tagline">Make your little you, move into your own studio, find a job, shop the neighborhood and meet new friends.</p>
+    <!-- hero: the banner (wordmark baked in), then the hook and the two ways in -->
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="banner">
+        <source media="(max-width: 700px)" type="image/webp" srcset="assets/art/banner-m-480.webp 480w, assets/art/banner-m-800.webp 800w" sizes="100vw" width="800" height="347">
+        <img src="assets/art/banner-1600.webp" srcset="assets/art/banner-960.webp 960w, assets/art/banner-1600.webp 1600w" sizes="100vw" width="1600" height="534" fetchpriority="high"
+          alt="LetsMeetVerse, a cozy LA life sim: chibi friends on a palm-lined, star-paved LA sidewalk" data-i18n-alt="bannerAlt">
+      </picture>
+      <div class="hero-copy">
+        <h1 id="hero-title" data-i18n="heroTitle">Get the keys to your first place in LA.</h1>
+        <div class="hero-side">
+          <p class="hero-lede" data-i18n="heroLede">Move into your own starter studio, make friends, work shifts at the café, decorate, and explore real neighborhoods from Santa Monica to Downtown.</p>
           <div class="ctas">
             <a class="btn btn-pink btn-lg" href="play/">
-              <img src="assets/icons/gamepad.png" alt="" width="40" height="40">
-              <span><strong data-i18n="ctaPlay">Play in browser</strong><small data-i18n="ctaPlaySub">Free · nothing to install</small></span>
+              <img src="assets/icons/gamepad.png" alt="" width="48" height="48">
+              <span><strong data-i18n="ctaPlay">Play in browser</strong><small data-i18n="ctaPlaySub">Free, nothing to install</small></span>
             </a>
-            <a class="btn btn-blue btn-lg" href="downloads/LetsMeetVerse-Windows-x64.zip" download data-win>
-              <img src="assets/icons/laptop.png" alt="" width="40" height="40">
-              <span><strong data-i18n="ctaWin">Download for Windows</strong><small><span data-i18n="ctaWinSub">Windows 10 / 11 · no installer</span><span class="dl-size" data-size></span></small></span>
+            <a class="btn btn-blue btn-lg" href="#download">
+              <img src="assets/icons/laptop.png" alt="" width="48" height="48">
+              <span><strong data-i18n="ctaWin">Get it for Windows</strong><small data-i18n="ctaWinSub">Installer for Windows 10 and 11</small></span>
             </a>
           </div>
           <p class="hero-note" data-i18n="heroNote">Works on computers, tablets and phones (turn your phone sideways).</p>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="bubble b1"><img src="assets/icons/hearts_two.png" alt="" width="44" height="44"></div>
-          <div class="bubble b2"><img src="assets/icons/coffee.png" alt="" width="44" height="44"></div>
-          <div class="bubble b3"><img src="assets/icons/map_pin.png" alt="" width="44" height="44"></div>
-          <img class="char char-a" src="assets/char-a.png" alt="" width="514" height="900">
-          <img class="char char-b" src="assets/char-b.png" alt="" width="501" height="900">
-          <div class="pedestal"></div>
-        </div>
       </div>
     </section>
 
-    <section class="features" id="features" aria-labelledby="f-title">
-      <h2 id="f-title" data-i18n="featTitle">Your new life, one block at a time</h2>
-      <p class="lead" data-i18n="featLead">Everything happens on streets laid out like the real city — so a walk to the café feels like a walk in LA.</p>
-      <div class="cards">
-        <article class="card c-pink">
-          <img src="assets/icons/map_pin.png" alt="" width="96" height="96">
-          <h3 data-i18n="f1t">Real LA districts</h3>
-          <p data-i18n="f1d">Koreatown, Hollywood, Mid-City, Downtown, Venice and Santa Monica — real streets, shops and landmarks.</p>
-        </article>
-        <article class="card c-blue">
-          <img src="assets/icons/decor-sofa.png" alt="" width="96" height="96">
-          <h3 data-i18n="f2t">Your own studio</h3>
-          <p data-i18n="f2d">Pick an apartment tower and a floor plan, then make it yours with sofas, lamps, plants and more.</p>
-        </article>
-        <article class="card c-butter">
-          <img src="assets/icons/coffee.png" alt="" width="96" height="96">
-          <h3 data-i18n="f3t">Jobs that pay</h3>
-          <p data-i18n="f3d">Pull espresso shots, run the register or cook the line. Earn coins, learn skills and get promoted.</p>
-        </article>
-        <article class="card c-mint">
-          <img src="assets/icons/shops.png" alt="" width="96" height="96">
-          <h3 data-i18n="f4t">Shops &amp; style</h3>
-          <p data-i18n="f4d">Coffee, groceries, fashion and furniture. Spend your pay and change your look at the wardrobe.</p>
-        </article>
-        <article class="card c-pink">
-          <img src="assets/icons/friends.png" alt="" width="96" height="96">
-          <h3 data-i18n="f5t">Friends &amp; neighbors</h3>
-          <p data-i18n="f5d">Say hi, chat, add friends and message them from your phone. Playing online together is on the way.</p>
-        </article>
-        <article class="card c-blue">
-          <img src="assets/icons/dog-golden.png" alt="" width="96" height="96">
-          <h3 data-i18n="f6t">Dogs, bikes &amp; buses</h3>
-          <p data-i18n="f6d">Adopt a pup, ride a bike, hop on a bus or get a car to cross town.</p>
-        </article>
+    <!-- what you do -->
+    <section class="life" aria-labelledby="life-title">
+      <div class="sec-head">
+        <h2 id="life-title" data-i18n="lifeTitle">Make the city yours</h2>
+        <p data-i18n="lifeLead">Days in LA run on your schedule: work when you need coins, shop when you have them, and stop to chat on the way.</p>
+      </div>
+      <ul class="life-grid">
+        <li class="life-item t-butter">
+          <div class="frame"><img src="assets/art/keys-800.webp" srcset="assets/art/keys-480.webp 480w, assets/art/keys-800.webp 800w, assets/art/keys-1200.webp 1200w" sizes="(min-width: 1100px) 280px, (min-width: 700px) 45vw, 92vw" width="1200" height="1200" loading="lazy" alt="A concierge hands a new resident the key to her studio while a friend carries a moving box" data-i18n-alt="lifeA0"></div>
+          <h3><img src="assets/icons/apartment.png" alt="" width="44" height="44"><span data-i18n="life0t">Move in</span></h3>
+          <p data-i18n="life0d">Pick a neighborhood, a floor plan and a floor. The concierge has your keys ready.</p>
+        </li>
+        <li class="life-item t-pink">
+          <div class="frame"><img src="assets/art/friends-800.webp" srcset="assets/art/friends-480.webp 480w, assets/art/friends-800.webp 800w, assets/art/friends-1200.webp 1200w" sizes="(min-width: 1100px) 280px, (min-width: 700px) 45vw, 92vw" width="1200" height="1200" loading="lazy" alt="Three friends wave to each other on a star-paved sidewalk outside a café" data-i18n-alt="lifeA1"></div>
+          <h3><img src="assets/icons/friends.png" alt="" width="44" height="44"><span data-i18n="life1t">Make friends</span></h3>
+          <p data-i18n="life1d">Say hi on the street, chat, add friends and message them from your in-game phone.</p>
+        </li>
+        <li class="life-item t-blue">
+          <div class="frame"><img src="assets/art/cafe-800.webp" srcset="assets/art/cafe-480.webp 480w, assets/art/cafe-800.webp 800w, assets/art/cafe-1200.webp 1200w" sizes="(min-width: 1100px) 280px, (min-width: 700px) 45vw, 92vw" width="1200" height="1200" loading="lazy" alt="A barista serves an iced coffee across a café counter with the pier behind her" data-i18n-alt="lifeA2"></div>
+          <h3><img src="assets/icons/coffee.png" alt="" width="44" height="44"><span data-i18n="life2t">Work a shift</span></h3>
+          <p data-i18n="life2d">Pull espresso, run the register or cook the line. Earn coins, learn skills and get promoted.</p>
+        </li>
+        <li class="life-item t-lav">
+          <div class="frame"><img src="assets/art/decorate-800.webp" srcset="assets/art/decorate-480.webp 480w, assets/art/decorate-800.webp 800w, assets/art/decorate-1200.webp 1200w" sizes="(min-width: 1100px) 280px, (min-width: 700px) 45vw, 92vw" width="1200" height="913" loading="lazy" alt="Two friends decorate a studio with cushions, a clothes rail and paint swatches" data-i18n-alt="lifeA3"></div>
+          <h3><img src="assets/icons/decor-sofa.png" alt="" width="44" height="44"><span data-i18n="life3t">Decorate</span></h3>
+          <p data-i18n="life3d">Pick a floor plan, then fill it with sofas, lamps and plants, and try on new looks at the wardrobe.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- the four starter neighborhoods, as key fobs on a wall -->
+    <section class="hoods" id="neighborhoods" aria-labelledby="hoods-title">
+      <div class="sec-head">
+        <h2 id="hoods-title" data-i18n="hoodsTitle">Pick your neighborhood</h2>
+        <p data-i18n="hoodsLead">Your starter studio can be in any of these four. The map also takes in Mid-City and Venice, and you can get around by bike, bus or car.</p>
+      </div>
+      <ul class="fobs">
+        <li class="fob f-blue">
+          <img src="assets/art/santamonica-400.webp" srcset="assets/art/santamonica-400.webp 400w, assets/art/santamonica-720.webp 720w" sizes="(min-width: 900px) 250px, 42vw" width="720" height="720" loading="lazy" alt="Friends in a baby-blue convertible on the beachfront by the pier" data-i18n-alt="hoodA1">
+          <h3 data-i18n="h1n">Santa Monica</h3>
+          <p class="alt-name" data-i18n="h1a" lang="zh-CN">圣莫尼卡</p>
+          <p data-i18n="h1d">Beach days, the pier and an ocean breeze.</p>
+        </li>
+        <li class="fob f-pink">
+          <img src="assets/art/hollywood-400.webp" srcset="assets/art/hollywood-400.webp 400w, assets/art/hollywood-720.webp 720w" sizes="(min-width: 900px) 250px, 42vw" width="720" height="720" loading="lazy" alt="Two friends meet on a sidewalk set with pink stars" data-i18n-alt="hoodA2">
+          <h3 data-i18n="h2n">Hollywood</h3>
+          <p class="alt-name" data-i18n="h2a" lang="zh-CN">好莱坞</p>
+          <p data-i18n="h2d">Star-set sidewalks, old theaters and bright marquees.</p>
+        </li>
+        <li class="fob f-lav">
+          <img src="assets/art/koreatown-400.webp" srcset="assets/art/koreatown-400.webp 400w, assets/art/koreatown-500.webp 500w" sizes="(min-width: 900px) 250px, 42vw" width="500" height="500" loading="lazy" alt="A Koreatown street sign and Korean restaurants seen through an apartment lobby window" data-i18n-alt="hoodA3">
+          <h3 data-i18n="h3n">Koreatown</h3>
+          <p class="alt-name" data-i18n="h3a" lang="zh-CN">韩国城</p>
+          <p data-i18n="h3d">Late-night food, karaoke and cafés that stay busy.</p>
+        </li>
+        <li class="fob f-butter">
+          <img src="assets/art/dtla-400.webp" srcset="assets/art/dtla-400.webp 400w, assets/art/dtla-720.webp 720w" sizes="(min-width: 900px) 250px, 42vw" width="720" height="720" loading="lazy" alt="Friends hang out in a studio with the downtown skyline at dusk behind them" data-i18n-alt="hoodA4">
+          <h3 data-i18n="h4n">Downtown LA</h3>
+          <p class="alt-name" data-i18n="h4a" lang="zh-CN">洛杉矶市中心</p>
+          <p data-i18n="h4d">Skyline views from loft-style towers.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- real screenshots -->
+    <section class="ingame" aria-labelledby="ingame-title">
+      <div class="sec-head">
+        <h2 id="ingame-title" data-i18n="gameTitle">Inside the game</h2>
+        <p data-i18n="gameLead">The pictures above are illustrations. These are real screenshots from the browser version.</p>
+      </div>
+      <div class="shots">
+        <figure class="shot shot-main"><button type="button" data-full="assets/shots/street-1600.webp"><img src="assets/shots/street-800.webp" srcset="assets/shots/street-800.webp 800w, assets/shots/street-1600.webp 1600w" sizes="(min-width: 900px) 760px, 92vw" width="1600" height="900" loading="lazy" alt="A Koreatown street in the game with palm trees, shops and the game's menus" data-i18n-alt="shot1a"></button><figcaption data-i18n="shot1">Out on the street</figcaption></figure>
+        <figure class="shot"><button type="button" data-full="assets/shots/studio-1600.webp"><img src="assets/shots/studio-800.webp" srcset="assets/shots/studio-800.webp 800w, assets/shots/studio-1600.webp 1600w" sizes="(min-width: 900px) 380px, 92vw" width="1600" height="900" loading="lazy" alt="A new player's studio apartment seen from above" data-i18n-alt="shot2a"></button><figcaption data-i18n="shot2">Your first studio</figcaption></figure>
+        <figure class="shot"><button type="button" data-full="assets/shots/cafe-1600.webp"><img src="assets/shots/cafe-800.webp" srcset="assets/shots/cafe-800.webp 800w, assets/shots/cafe-1600.webp 1600w" sizes="(min-width: 900px) 380px, 92vw" width="1600" height="900" loading="lazy" alt="Inside a neighborhood café in the game" data-i18n-alt="shot3a"></button><figcaption data-i18n="shot3">Coffee break</figcaption></figure>
       </div>
     </section>
 
-    <section class="shots" id="shots" aria-labelledby="s-title">
-      <h2 id="s-title" data-i18n="shotsTitle">A peek inside</h2>
-      <div class="gallery">
-        <figure class="shot big"><button type="button" data-full="assets/shot-street.jpg"><img src="assets/shot-street.jpg" alt="Koreatown street with palm trees and shops" width="1600" height="900" loading="lazy" data-i18n-alt="s1a"></button><figcaption data-i18n="s1">Morning in Koreatown</figcaption></figure>
-        <figure class="shot"><button type="button" data-full="assets/shot-create.jpg"><img src="assets/shot-create.jpg" alt="Character creator" width="1600" height="900" loading="lazy" data-i18n-alt="s2a"></button><figcaption data-i18n="s2">Make your character</figcaption></figure>
-        <figure class="shot"><button type="button" data-full="assets/shot-studio.jpg"><img src="assets/shot-studio.jpg" alt="Your studio apartment" width="1600" height="900" loading="lazy" data-i18n-alt="s3a"></button><figcaption data-i18n="s3">Your studio</figcaption></figure>
-        <figure class="shot"><button type="button" data-full="assets/shot-shop.jpg"><img src="assets/shot-shop.jpg" alt="Inside a café" width="1600" height="900" loading="lazy" data-i18n-alt="s4a"></button><figcaption data-i18n="s4">Coffee break</figcaption></figure>
-        <figure class="shot"><button type="button" data-full="assets/shot-map.jpg"><img src="assets/shot-map.jpg" alt="The phone with the city map" width="1600" height="900" loading="lazy" data-i18n-alt="s5a"></button><figcaption data-i18n="s5">Your phone &amp; the city map</figcaption></figure>
+    <!-- ways to play -->
+    <section class="ways" id="ways" aria-labelledby="ways-title">
+      <div class="sec-head">
+        <h2 id="ways-title" data-i18n="waysTitle">How to play</h2>
       </div>
-    </section>
-
-    <section class="download" id="download" aria-labelledby="d-title">
-      <h2 id="d-title" data-i18n="dlTitle">Play your way</h2>
-      <div class="dl-grid">
-        <div class="dl-card dl-web">
-          <img src="assets/icons/gamepad.png" alt="" width="80" height="80">
-          <h3 data-i18n="dlWebT">In your browser</h3>
-          <p data-i18n="dlWebD">Chrome, Edge, Safari or Firefox on a computer, tablet or phone. Your town is saved in this browser.</p>
+      <ul class="ways-list">
+        <li class="way">
+          <img src="assets/icons/gamepad.png" alt="" width="72" height="72">
+          <p class="status" data-i18n="ready">Ready now</p>
+          <h3 data-i18n="w1t">In your browser</h3>
+          <p data-i18n="w1d">Chrome, Edge, Safari or Firefox, on a computer, tablet or phone. Your town is saved in that browser.</p>
           <a class="btn btn-pink" href="play/" data-i18n="ctaPlay">Play in browser</a>
+        </li>
+        <li class="way">
+          <img src="assets/icons/laptop.png" alt="" width="72" height="72">
+          <p class="status" data-i18n="ready">Ready now</p>
+          <h3 data-i18n="w2t">On Windows</h3>
+          <p data-i18n="w2d">Install the desktop app for a full-window game that plays offline and saves on your PC.</p>
+          <a class="btn btn-blue" href="#download" data-i18n="w2b">Get the installer</a>
+        </li>
+        <li class="way way-soon">
+          <img src="assets/icons/chat.png" alt="" width="72" height="72">
+          <p class="status" data-i18n="soon">Coming soon</p>
+          <h3 data-i18n="w3t">Online with friends</h3>
+          <p data-i18n="w3d">For now each town is single-player, on your own device. Shared towns where you can visit friends are on the way.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- download -->
+    <section class="download" id="download" aria-labelledby="dl-title">
+      <div class="dl-panel">
+        <div class="dl-main">
+          <img class="dl-icon" src="assets/icons/laptop.png" alt="" width="88" height="88">
+          <h2 id="dl-title" data-i18n="dlTitle">LetsMeetVerse for Windows</h2>
+          <p data-i18n="dlLead">A small installer that sets the game up just for you, with no admin password. It adds a Start menu shortcut, plays offline, and uninstalls from Settings &gt; Apps.</p>
+          <a class="btn btn-blue btn-lg btn-dl" href="downloads/LetsMeetVerse-Setup-x64.exe" download data-dl="setup">
+            <img src="assets/icons/laptop.png" alt="" width="48" height="48">
+            <span><strong data-i18n="dlSetup">Download installer</strong><small><span data-i18n="dlSetupSub">Windows 10 and 11, 64-bit</span><span class="dl-size" data-size="setup"></span></small></span>
+          </a>
+          <ul class="dl-alt">
+            <li><span data-i18n="dlZipPre">Prefer no install? Get the</span> <a href="downloads/LetsMeetVerse-Windows-x64.zip" download data-dl="zip" data-i18n="dlZip">portable .zip</a><span class="dl-size-p" data-size="zip"></span><span data-i18n="dlZipPost">, unzip it anywhere and run LetsMeetVerse.exe.</span></li>
+            <li data-dl-row="linux"><a href="downloads/LetsMeetVerse-Linux-x64.zip" download data-dl="linux" data-i18n="dlLinux">Linux build (.zip, beta)</a><span class="dl-size" data-size="linux"></span></li>
+            <li data-i18n="dlMac">On a Mac or Chromebook? Play in the browser, it is the same game.</li>
+          </ul>
         </div>
-        <div class="dl-card dl-win">
-          <img src="assets/icons/laptop.png" alt="" width="80" height="80">
-          <h3 data-i18n="dlWinT">Windows app</h3>
-          <p data-i18n="dlWinD">No installer: unzip the folder anywhere and double-click LetsMeetVerse.exe. Plays offline, saves on your PC.</p>
-          <a class="btn btn-blue" href="downloads/LetsMeetVerse-Windows-x64.zip" download data-win><span data-i18n="ctaWin">Download for Windows</span><span class="dl-size" data-size></span></a>
-          <p class="fine" data-i18n="dlWinFine">First launch: if Windows shows “Windows protected your PC”, choose More info → Run anyway. Needs the WebView2 runtime (built into Windows 11 and updated Windows 10).</p>
-        </div>
-        <div class="dl-card dl-other">
-          <img src="assets/icons/sparkles.png" alt="" width="80" height="80">
-          <h3 data-i18n="dlOtherT">Mac, Linux &amp; Chromebook</h3>
-          <p data-i18n="dlOtherD">Play in the browser — it is the same game. Linux fans can also grab the desktop build.</p>
-          <a class="btn btn-ghost" href="downloads/LetsMeetVerse-Linux-x64.zip" download data-linux data-i18n="dlLinux">Linux build (.zip, beta)</a>
-        </div>
+        <aside class="dl-help" aria-labelledby="ss-title">
+          <h3 id="ss-title" data-i18n="ssTitle">Seeing “Windows protected your PC”?</h3>
+          <p data-i18n="ssLead">The app is new and not code-signed yet, so Microsoft Defender SmartScreen checks with you the first time.</p>
+          <ol class="ss-steps">
+            <li><span class="ss-win" aria-hidden="true"><i></i><i></i><u data-i18n="ssMore">More info</u></span><span data-i18n="ss1">Click <b>More info</b></span></li>
+            <li><span class="ss-win" aria-hidden="true"><i></i><i></i><em data-i18n="ssRun">Run anyway</em></span><span data-i18n="ss2">Then click <b>Run anyway</b></span></li>
+          </ol>
+          <p class="fine" data-i18n="ssFine">The game needs Microsoft Edge WebView2, which is built into Windows 11 and up-to-date Windows 10.</p>
+        </aside>
       </div>
-      <p class="preview-note"><img src="assets/icons/megaphone.png" alt="" width="32" height="32"><span data-i18n="previewNote">Early preview: the browser and desktop versions run your own single-player town on your device. Online play with friends is coming soon.</span></p>
     </section>
   </main>
 
   <footer class="foot">
-    <span class="pill pill-sm" aria-hidden="true"><b class="p-lets">Lets</b><b class="p-meet">Meet</b><b class="p-verse">Verse</b></span>
-    <nav aria-label="Footer">
-      <a href="play/" data-i18n="ctaPlay">Play in browser</a>
-      <a href="#download" data-i18n="navDownload">Download</a>
-      <a href="#top" data-i18n="backTop">Back to top</a>
-    </nav>
-    <p class="fine"><span data-i18n="footMade">© 2026 LetsMeetVerse · A cozy life in real LA.</span> <span data-i18n="footCredits">Fonts: Nunito &amp; Fredoka (SIL OFL). Desktop app made with Neutralinojs.</span></p>
+    <div class="foot-inner">
+      <a class="brand brand-foot" href="#top"><span class="word" aria-hidden="true"><span class="w1" data-t="Lets">Lets</span><span class="w2" data-t="Meet">Meet</span><span class="w3" data-t="Verse">Verse</span></span><span class="sr" data-i18n="backTop">Back to top</span></a>
+      <nav aria-label="Footer">
+        <a href="play/" data-i18n="ctaPlay">Play in browser</a>
+        <a href="#download" data-i18n="navDownload">Download</a>
+        <a href="#top" data-i18n="backTop">Back to top</a>
+      </nav>
+      <p class="fine"><span data-i18n="footMade">© 2026 LetsMeetVerse. A cozy life in real LA.</span> <span data-i18n="footCredits">Illustrations are promotional art; screenshots are from the game. Fonts: Nunito, Fredoka and Bree Serif (SIL OFL). Desktop app made with Neutralinojs.</span></p>
+    </div>
   </footer>
 
   <dialog class="lightbox" aria-label="Screenshot">
-    <form method="dialog"><button class="lb-close" aria-label="Close">×</button></form>
+    <form method="dialog"><button class="lb-close" aria-label="Close" data-i18n-label="close">×</button></form>
     <img alt="">
   </dialog>
 

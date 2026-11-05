@@ -1,9 +1,11 @@
-// LetsMeetVerse landing page: English / 中文, screenshot lightbox, download sizes. No dependencies.
-// English lives in the HTML; Chinese is below. 中文 is the default when the browser prefers Chinese.
+// letsmeetverse.com pages: English / 中文, the screenshot lightbox. No dependencies.
+// English lives in the HTML; Chinese is below. 中文 is the default when the browser prefers Chinese. Another page adds its
+// own Chinese strings as window.LMV_I18N = { zh: {…} } before this script, and its Chinese title as <html data-title-zh>.
+// Whenever the language is set (also on load) the page gets a 'lmv:lang' event with the language in detail.
 (function () {
   var ZH = {
     skip: '跳到正文',
-    navHoods: '街区', navWays: '怎么玩', navDownload: '抢先体验', navPlay: '抢先体验',
+    navHoods: '街区', navWays: '怎么玩', navDownload: '抢先体验', navPlay: '抢先体验', navDiary: '开发日志', navEA: '抢先体验',
     heroTitle: '拿上钥匙，搬进你在洛杉矶的第一个家。',
     heroLede: '搬进属于你的第一间小公寓，交朋友、去咖啡店打工、布置小窝，从圣莫尼卡一路逛到市中心。',
     bannerAlt: 'LetsMeetVerse，洛杉矶治愈系生活模拟：一群Q版朋友走在种满棕榈树、铺着星星的洛杉矶人行道上',
@@ -50,12 +52,16 @@
     footMade: '© 2026 LetsMeetVerse。在真实的洛杉矶，过一段治愈的生活。',
     footCredits: '插画为宣传美术，截图来自游戏本身。字体：Nunito、Fredoka 与 Bree Serif（SIL OFL）。电脑版基于 Neutralinojs。'
   };
+  var PAGE = window.LMV_I18N || {};
+  if (PAGE.zh) Object.keys(PAGE.zh).forEach(function (k) { ZH[k] = PAGE.zh[k]; });
   var EN = {};
   var nodes = document.querySelectorAll('[data-i18n]'), alts = document.querySelectorAll('[data-i18n-alt]'), labels = document.querySelectorAll('[data-i18n-label]');
   nodes.forEach(function (n) { EN[n.dataset.i18n] = n.innerHTML; });
   alts.forEach(function (n) { EN['alt:' + n.dataset.i18nAlt] = n.alt; });
   labels.forEach(function (n) { EN['label:' + n.dataset.i18nLabel] = n.getAttribute('aria-label'); });
-  var titles = { en: document.title, zh: 'LetsMeetVerse · 在真实的洛杉矶过治愈生活' };
+  var titles = { en: document.title, zh: document.documentElement.getAttribute('data-title-zh') || 'LetsMeetVerse · 在真实的洛杉矶过治愈生活' };
+  var LMV = window.LMV = window.LMV || {};
+  function announce(lang) { LMV.lang = lang; try { document.dispatchEvent(new CustomEvent('lmv:lang', { detail: lang })); } catch (e) {} }
 
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
   function apply(lang) {
@@ -68,20 +74,22 @@
     document.documentElement.lang = zh ? 'zh-CN' : 'en';
     document.title = titles[lang] || titles.en;
     document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    announce(lang);
   }
   var q = new URLSearchParams(location.search).get('lang');
   var prefersZh = (navigator.languages || [navigator.language || '']).some(function (l) { return /^zh/i.test(l); });
   var lang = q === 'zh' || q === 'en' ? q : store('lmv_lang') || (prefersZh ? 'zh' : 'en');
-  if (lang !== 'en') apply(lang);
+  if (lang !== 'en') apply(lang); else announce(lang);
   document.querySelectorAll('.lang button').forEach(function (b) {
     b.addEventListener('click', function () { lang = b.dataset.lang; store('lmv_lang', lang); apply(lang); });
   });
 
-  // screenshots open large
+  // screenshots open large (any [data-full] button, also ones a page draws later)
   var box = document.querySelector('.lightbox');
   if (box && box.showModal) {
-    document.querySelectorAll('[data-full]').forEach(function (b) {
-      b.addEventListener('click', function () { var im = box.querySelector('img'); im.src = b.dataset.full; im.alt = b.querySelector('img').alt; box.showModal(); });
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-full]'); if (!b) return;
+      var im = box.querySelector('img'), small = b.querySelector('img'); im.src = b.dataset.full; im.alt = small ? small.alt : ''; box.showModal();
     });
     box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
   }
@@ -94,8 +102,8 @@
   }
 
   // download sizes come from the files themselves, so there are no numbers to keep in sync
-  var files = {};   // downloads are behind Early Access now
-  if (location.protocol !== 'file:' && window.fetch) Object.keys(files).forEach(function (k) {
+  var files = { setup: 'downloads/LetsMeetVerse-Setup-x64.exe', zip: 'downloads/LetsMeetVerse-Windows-x64.zip', linux: 'downloads/LetsMeetVerse-Linux-x64.zip' };
+  if (location.protocol !== 'file:' && window.fetch && document.querySelector('[data-size]')) Object.keys(files).forEach(function (k) {
     fetch(files[k], { method: 'HEAD' }).then(function (r) {
       if (!r.ok) { if (k === 'linux') document.querySelectorAll('[data-dl-row="linux"]').forEach(function (e) { e.hidden = true; }); return; }
       var n = +r.headers.get('content-length');

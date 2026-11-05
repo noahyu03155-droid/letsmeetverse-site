@@ -2,7 +2,6 @@
    the writing on the other, a stamp for its topic), and Noah's note on top travels airmail in the brand pink and blue.
    Built on the landing page's tokens and parts (site.css): ink, pastels, Fredoka / Nunito, clay buttons, puffy wordmark. */
 
-.nav-links a[aria-current="page"] { background: var(--blue-l); box-shadow: inset 0 0 0 2px #CFE8F8; }
 
 /* ---------- top: the title and Noah's note ---------- */
 .d-hero { padding: clamp(36px, 5.5vw, 80px) var(--gut) clamp(56px, 7vw, 104px); background: linear-gradient(180deg, var(--blue-l) 0%, var(--page) 100%); }

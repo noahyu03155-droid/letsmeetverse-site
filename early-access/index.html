@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-title-zh="抢先体验 · LetsMeetVerse">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Early Access · LetsMeetVerse</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Enter your LetsMeetVerse Early Access code to play online and download the desktop app.">
+  <meta name="theme-color" content="#E4F4FE">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+  <link rel="apple-touch-icon" href="../img/icon-192.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LetsMeetVerse">
+  <meta property="og:title" content="LetsMeetVerse Early Access">
+  <meta property="og:description" content="Got a code? Play online in real LA, or download the desktop app.">
+  <meta property="og:image" content="https://letsmeetverse.com/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="../fonts/fredoka-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="../">
+      <span class="word" aria-hidden="true"><span class="w1" data-t="Lets">Lets</span><span class="w2" data-t="Meet">Meet</span><span class="w3" data-t="Verse">Verse</span></span>
+      <span class="sr">LetsMeetVerse</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="../#neighborhoods" data-i18n="navHoods">Neighborhoods</a>
+      <a href="../#ways" data-i18n="navWays">How to play</a>
+      <a href="../diary/" data-i18n="navDiary">Dev Diary</a>
+      <a href="./" aria-current="page" data-i18n="navEA">Early Access</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language / 语言">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="ea-page">
+    <div class="ea-page-in">
+      <div class="ea-page-head">
+        <h1 data-i18n="eaPageTitle">Early Access</h1>
+        <p class="ea-page-lede" data-i18n="eaPageLede">LetsMeetVerse is still being built, one release at a time. While it's in Early Access, a code lets you in.</p>
+      </div>
+      <!-- the code box (ea.js); the same one the landing page opens as a dialog -->
+      <div class="ea-card" id="ea-inline" aria-live="polite">
+        <noscript><p class="ea-lead" data-i18n="eaNoJs">Turn on JavaScript to enter your code.</p></noscript>
+      </div>
+      <div class="ea-page-more">
+        <ul class="ea-panel-list" aria-label="What your code unlocks" data-i18n-label="eaListLabel">
+          <li><img src="../assets/icons/friends.png" alt="" width="54" height="54"><span data-i18n="eaL1"><b>Play online</b> in your browser: meet real people, work, buy a place, open a shop.</span></li>
+          <li><img src="../assets/icons/laptop.png" alt="" width="54" height="54"><span data-i18n="eaL2"><b>Windows app</b>: an installer or a portable zip, for a town of your own that plays offline.</span></li>
+          <li><img src="../assets/icons/apartment.png" alt="" width="54" height="54"><span data-i18n="eaL3"><b>Linux build</b> (beta), the same desktop app.</span></li>
+        </ul>
+        <p class="ea-page-fine" data-i18n="eaHasAccount">Already have an account? You don't need a code: sign in at <a href="https://play.letsmeetverse.com/">play.letsmeetverse.com</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-inner">
+      <a class="brand brand-foot" href="../"><span class="word" aria-hidden="true"><span class="w1" data-t="Lets">Lets</span><span class="w2" data-t="Meet">Meet</span><span class="w3" data-t="Verse">Verse</span></span><span class="sr" data-i18n="home">Home</span></a>
+      <nav aria-label="Footer">
+        <a href="../diary/" data-i18n="navDiary">Dev Diary</a>
+        <a href="../" data-i18n="home">Home</a>
+        <a href="#top" data-i18n="backTop">Back to top</a>
+      </nav>
+      <p class="fine"><span data-i18n="footMade">© 2026 LetsMeetVerse. A cozy life in real LA.</span></p>
+    </div>
+  </footer>
+
+  <script>
+    window.LMV_I18N = { zh: {
+      home: '首页', eaPageTitle: '抢先体验',
+      eaPageLede: 'LetsMeetVerse 还在一点一点地建设中。抢先体验期间，凭邀请码就能进来玩。',
+      eaNoJs: '请开启 JavaScript 后输入邀请码。',
+      eaHasAccount: '已经有账号了？不需要邀请码，直接去 <a href="https://play.letsmeetverse.com/">play.letsmeetverse.com</a> 登录。'
+    } };
+  </script>
+  <script src="../site.js"></script>
+  <script src="../ea.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "30a77df9143f4ba6b9e35cbcad948b07"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -5,13 +5,13 @@
 (function () {
   var ZH = {
     skip: '跳到正文',
-    navHoods: '街区', navWays: '怎么玩', navDownload: '抢先体验', navPlay: '抢先体验', navDiary: '开发日志', navEA: '抢先体验',
+    navHoods: '街区', navWays: '怎么玩', navDownload: '下载', navPlay: '开始玩', navDiary: '开发日志', navEA: '抢先体验', navEnter: '输入邀请码',
     heroTitle: '拿上钥匙，搬进你在洛杉矶的第一个家。',
     heroLede: '搬进属于你的第一间小公寓，交朋友、去咖啡店打工、布置小窝，从圣莫尼卡一路逛到市中心。',
     bannerAlt: 'LetsMeetVerse，洛杉矶治愈系生活模拟：一群Q版朋友走在种满棕榈树、铺着星星的洛杉矶人行道上',
-    ctaPlay: '抢先体验', ctaPlaySub: '需要邀请码',
-    ctaWin: '下载 Windows 版', ctaWinSub: '适用于 Windows 10 和 11 的安装包',
-    heroNote: '抢先体验阶段，需要邀请码才能玩。',
+    ctaEA: '获取抢先体验', ctaEASub: '输入邀请码就能玩',
+    ctaDiary: '阅读开发日志', ctaDiarySub: '每次更新都有新内容',
+    heroNote: '在浏览器里在线玩，电脑、平板、手机都可以（手机请横屏），也可以下载 Windows 版。',
     lifeTitle: '把这座城市过成你的生活',
     lifeLead: '在洛杉矶，日子按你的节奏过：缺钱就去上班，有钱就去逛街，路上遇到人就停下来聊两句。',
     life0t: '搬进新家', life0d: '选好街区、户型和楼层，前台已经把钥匙给你准备好了。',
@@ -32,22 +32,18 @@
     shot1: '走上街头', shot2: '你的第一间小公寓', shot3: '咖啡时间',
     shot1a: '游戏里的韩国城街道，有棕榈树、店铺和游戏界面', shot2a: '从上方看新玩家的小公寓', shot3a: '游戏里街区咖啡店的内部',
     waysTitle: '怎么玩',
-    ready: '抢先体验', soon: '即将上线',
-    w1t: '在浏览器里', w1d: '电脑、平板或手机上的 Chrome、Edge、Safari、Firefox 都可以。进度保存在这个浏览器里。',
-    w2t: 'Windows 电脑版', w2d: '安装电脑版，全窗口游玩，可以离线，进度保存在你的电脑上。', w2b: '抢先体验',
-    w3t: '和朋友联机', w3d: '目前每个小镇都是单人模式，运行在你自己的设备上。能互相串门的联机小镇正在路上。',
-    dlTitle: 'LetsMeetVerse Windows 版',
-    eaTitle: '抢先体验（Early Access）', eaLead: 'LetsMeetVerse 正在抢先体验阶段。在线游玩和 Windows / Linux 下载需要邀请码才能使用，输入邀请码的页面很快开放。',
-    dlLead: '小巧的安装包，只为你自己安装，不需要管理员密码。会添加开始菜单快捷方式，可以离线游玩，在“设置 > 应用”里就能卸载。',
-    dlSetup: '下载安装包', dlSetupSub: 'Windows 10 和 11，64 位',
-    dlZipPre: '不想安装？下载', dlZip: '便携版 .zip', dlZipPost: '，解压到任意位置，双击 LetsMeetVerse.exe 即可。',
-    dlLinux: 'Linux 版（.zip，测试版）',
-    dlMac: '用 Mac 或 Chromebook？直接在浏览器里玩，是同一个游戏。',
-    ssTitle: '看到“Windows 已保护你的电脑”？',
-    ssLead: '这个应用还很新，暂时没有代码签名，所以第一次打开时 Microsoft Defender SmartScreen 会先问你一下。',
-    ssMore: '更多信息', ssRun: '仍要运行',
-    ss1: '点击<b>“更多信息”</b>', ss2: '再点击<b>“仍要运行”</b>',
-    ssFine: '游戏需要 Microsoft Edge WebView2 运行库，Windows 11 和已更新的 Windows 10 都自带。',
+    eaStatus: '抢先体验', diaryStatus: '每次更新',
+    w1t: '在浏览器里在线玩', w1d: '和真实的玩家一起生活在洛杉矶：电脑、平板或手机上的 Chrome、Edge、Safari、Firefox 都可以。注册新账号需要抢先体验邀请码。',
+    w2t: 'Windows 电脑版', w2d: '电脑版是属于你自己的单人小镇：全窗口，可以离线，进度保存在你的电脑上。还有一个测试中的 Linux 版。', w2b: '获取下载',
+    w3t: '关注开发日志', w3d: '新的建筑、和朋友一起做的新事情、新来的邻居：每次更新改了什么，都配着截图写在这里。', w3b: '看看开发日志',
+    eaTitle: '抢先体验开放中',
+    eaLead: '有邀请码吗？输入后就能和洛杉矶的大家一起在线玩，还能下载 Windows 和 Linux 电脑版。',
+    eaEnterSub: '解锁在线游玩和下载',
+    eaHow: '还没有邀请码？我们会在<a href="diary/">开发日志</a>和社交账号上发给关注的朋友。',
+    eaListLabel: '邀请码可以解锁的内容',
+    eaL1: '<b>在线游玩</b>：在浏览器里认识真实的玩家，上班、买房、开店。',
+    eaL2: '<b>Windows 版</b>：安装包或便携版 zip，一个可以离线玩的自己的小镇。',
+    eaL3: '<b>Linux 版</b>（测试版），同样的电脑版。',
     backTop: '回到顶部', close: '关闭',
     footMade: '© 2026 LetsMeetVerse。在真实的洛杉矶，过一段治愈的生活。',
     footCredits: '插画为宣传美术，截图来自游戏本身。字体：Nunito、Fredoka 与 Bree Serif（SIL OFL）。电脑版基于 Neutralinojs。'
@@ -100,14 +96,4 @@
     var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { wall.classList.add('nudge'); io.disconnect(); } }, { threshold: 0.4 });
     io.observe(wall);
   }
-
-  // download sizes come from the files themselves, so there are no numbers to keep in sync
-  var files = { setup: 'downloads/LetsMeetVerse-Setup-x64.exe', zip: 'downloads/LetsMeetVerse-Windows-x64.zip', linux: 'downloads/LetsMeetVerse-Linux-x64.zip' };
-  if (location.protocol !== 'file:' && window.fetch && document.querySelector('[data-size]')) Object.keys(files).forEach(function (k) {
-    fetch(files[k], { method: 'HEAD' }).then(function (r) {
-      if (!r.ok) { if (k === 'linux') document.querySelectorAll('[data-dl-row="linux"]').forEach(function (e) { e.hidden = true; }); return; }
-      var n = +r.headers.get('content-length');
-      if (n) document.querySelectorAll('[data-size="' + k + '"]').forEach(function (e) { e.textContent = Math.round(n / 1048576) + ' MB'; });
-    }).catch(function () {});
-  });
 })();

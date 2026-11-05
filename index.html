@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>LetsMeetVerse · A cozy life in real Los Angeles</title>
-  <meta name="description" content="LetsMeetVerse is a cozy chibi life sim set in real Los Angeles. Move into your own starter studio, make friends, work shifts, decorate and explore Santa Monica, Hollywood, Koreatown and Downtown. Play free in your browser or install it on Windows.">
+  <meta name="description" content="LetsMeetVerse is a cozy chibi life sim set in real Los Angeles. Move into your own starter studio, make friends, work shifts, decorate and explore Santa Monica, Hollywood, Koreatown and Downtown. Now in Early Access: play online in your browser or on Windows.">
   <meta name="theme-color" content="#E4F4FE">
   <link rel="canonical" href="https://letsmeetverse.com/">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
@@ -19,7 +19,7 @@
   <link rel="preload" href="fonts/fredoka-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" type="image/webp" media="(max-width: 700px)" imagesrcset="assets/art/banner-m-480.webp 480w, assets/art/banner-m-800.webp 800w, assets/art/banner-m-1200.webp 1200w" imagesizes="100vw">
   <link rel="preload" as="image" type="image/webp" media="(min-width: 701px)" imagesrcset="assets/art/banner-960.webp 960w, assets/art/banner-1600.webp 1600w, assets/art/banner-2400.webp 2400w, assets/art/banner-2686.webp 2686w" imagesizes="100vw">
-  <link rel="stylesheet" href="site.css?v=d1">
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
@@ -33,14 +33,14 @@
       <a href="#neighborhoods" data-i18n="navHoods">Neighborhoods</a>
       <a href="#ways" data-i18n="navWays">How to play</a>
       <a href="diary/" data-i18n="navDiary">Dev Diary</a>
-      <a href="#download" data-i18n="navDownload">Early Access</a>
+      <a href="early-access/" data-ea data-i18n="navEA">Early Access</a>
     </nav>
     <div class="nav-right">
       <div class="lang" role="group" aria-label="Language / 语言">
         <button type="button" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
       </div>
-      <a class="btn btn-pink btn-sm nav-play" href="#download" data-i18n="navPlay">Early Access</a>
+      <a class="btn btn-pink btn-sm nav-play" href="early-access/" data-ea data-i18n="navEnter">Enter code</a>
     </div>
   </header>
 
@@ -57,12 +57,16 @@
         <div class="hero-side">
           <p class="hero-lede" data-i18n="heroLede">Move into your own starter studio, make friends, work shifts at the café, decorate, and explore real neighborhoods from Santa Monica to Downtown.</p>
           <div class="ctas">
-            <a class="btn btn-pink btn-lg" href="#download">
+            <a class="btn btn-pink btn-lg" href="early-access/" data-ea>
               <img src="assets/icons/gamepad.png" alt="" width="48" height="48">
-              <span><strong data-i18n="ctaPlay">Early Access</strong><small data-i18n="ctaPlaySub">Access code required</small></span>
+              <span><strong data-i18n="ctaEA">Get Early Access</strong><small data-i18n="ctaEASub">Enter your code to play</small></span>
+            </a>
+            <a class="btn btn-blue btn-lg" href="diary/">
+              <img src="assets/icons/chat.png" alt="" width="48" height="48">
+              <span><strong data-i18n="ctaDiary">Read the Dev Diary</strong><small data-i18n="ctaDiarySub">What's new in every release</small></span>
             </a>
           </div>
-          <p class="hero-note" data-i18n="heroNote">Early access: you need an access code to play.</p>
+          <p class="hero-note" data-i18n="heroNote">Online in your browser on computers, tablets and phones (turn your phone sideways), or as an app for Windows.</p>
         </div>
       </div>
     </section>
@@ -152,35 +156,47 @@
       <ul class="ways-list">
         <li class="way">
           <img src="assets/icons/gamepad.png" alt="" width="72" height="72">
-          <p class="status" data-i18n="ready">Early access</p>
-          <h3 data-i18n="w1t">In your browser</h3>
-          <p data-i18n="w1d">Chrome, Edge, Safari or Firefox, on a computer, tablet or phone. Your town is saved in that browser.</p>
-          <a class="btn btn-pink" href="#download" data-i18n="ctaPlay">Early Access</a>
+          <p class="status st-ea" data-i18n="eaStatus">Early Access</p>
+          <h3 data-i18n="w1t">Online, in your browser</h3>
+          <p data-i18n="w1d">Share LA with real people: Chrome, Edge, Safari or Firefox on a computer, tablet or phone. New accounts need an Early Access code.</p>
+          <a class="btn btn-pink" href="early-access/" data-ea data-i18n="navEnter">Enter code</a>
         </li>
         <li class="way">
           <img src="assets/icons/laptop.png" alt="" width="72" height="72">
-          <p class="status" data-i18n="ready">Early access</p>
+          <p class="status st-ea" data-i18n="eaStatus">Early Access</p>
           <h3 data-i18n="w2t">On Windows</h3>
-          <p data-i18n="w2d">Install the desktop app for a full-window game that plays offline and saves on your PC.</p>
-          <a class="btn btn-blue" href="#download" data-i18n="w2b">Early Access</a>
+          <p data-i18n="w2d">The desktop app is your own single-player town: full window, plays offline, saves on your PC. There is a Linux build in beta too.</p>
+          <a class="btn btn-blue" href="early-access/" data-ea data-i18n="w2b">Get the download</a>
         </li>
-        <li class="way way-soon">
+        <li class="way">
           <img src="assets/icons/chat.png" alt="" width="72" height="72">
-          <p class="status" data-i18n="soon">Coming soon</p>
-          <h3 data-i18n="w3t">Online with friends</h3>
-          <p data-i18n="w3d">For now each town is single-player, on your own device. Shared towns where you can visit friends are on the way.</p>
+          <p class="status st-diary" data-i18n="diaryStatus">Every release</p>
+          <h3 data-i18n="w3t">Follow the Dev Diary</h3>
+          <p data-i18n="w3d">New buildings, new things to do together, new neighbors: what changed in each release, with screenshots.</p>
+          <a class="btn btn-blue" href="diary/" data-i18n="w3b">Read the diary</a>
         </li>
       </ul>
     </section>
 
-    <!-- download -->
-    <section class="download" id="download" aria-labelledby="dl-title">
-      <div class="dl-panel">
-        <div class="dl-main">
-          <img class="dl-icon" src="assets/icons/laptop.png" alt="" width="88" height="88">
-          <h2 id="dl-title" data-i18n="eaTitle">Early Access</h2>
-          <p data-i18n="eaLead">LetsMeetVerse is in early access. Playing online and the Windows / Linux downloads are open to players with an access code. The code page opens very soon.</p>
+    <!-- Early Access: the whole panel opens the code box (ea.js); without script, everything goes to /early-access/ -->
+    <section class="download" id="early-access" aria-labelledby="ea-title">
+      <span id="download"></span>
+      <div class="ea-panel" data-ea-panel>
+        <div class="ea-panel-main">
+          <img class="dl-icon" src="assets/icons/lock.png" alt="" width="88" height="88">
+          <h2 id="ea-title" data-i18n="eaTitle">Early Access is open</h2>
+          <p data-i18n="eaLead">Got a code? Enter it to play online with everyone in LA, and to download the desktop app for Windows and Linux.</p>
+          <a class="btn btn-blue btn-lg" href="early-access/" data-ea>
+            <img src="assets/icons/lock.png" alt="" width="48" height="48">
+            <span><strong data-i18n="navEnter">Enter code</strong><small data-i18n="eaEnterSub">Unlocks online play and the downloads</small></span>
+          </a>
+          <p class="ea-panel-fine" data-i18n="eaHow">No code yet? We share codes with people who follow the <a href="diary/">Dev Diary</a> and our socials.</p>
         </div>
+        <ul class="ea-panel-list" aria-label="What your code unlocks" data-i18n-label="eaListLabel">
+          <li><img src="assets/icons/friends.png" alt="" width="54" height="54"><span data-i18n="eaL1"><b>Play online</b> in your browser: meet real people, work, buy a place, open a shop.</span></li>
+          <li><img src="assets/icons/laptop.png" alt="" width="54" height="54"><span data-i18n="eaL2"><b>Windows app</b>: an installer or a portable zip, for a town of your own that plays offline.</span></li>
+          <li><img src="assets/icons/apartment.png" alt="" width="54" height="54"><span data-i18n="eaL3"><b>Linux build</b> (beta), the same desktop app.</span></li>
+        </ul>
       </div>
     </section>
   </main>
@@ -189,8 +205,7 @@
     <div class="foot-inner">
       <a class="brand brand-foot" href="#top"><span class="word" aria-hidden="true"><span class="w1" data-t="Lets">Lets</span><span class="w2" data-t="Meet">Meet</span><span class="w3" data-t="Verse">Verse</span></span><span class="sr" data-i18n="backTop">Back to top</span></a>
       <nav aria-label="Footer">
-        <a href="#download" data-i18n="ctaPlay">Early Access</a>
-        <a href="#download" data-i18n="navDownload">Early Access</a>
+        <a href="early-access/" data-ea data-i18n="navEA">Early Access</a>
         <a href="diary/" data-i18n="navDiary">Dev Diary</a>
         <a href="#top" data-i18n="backTop">Back to top</a>
       </nav>
@@ -203,7 +218,8 @@
     <img alt="">
   </dialog>
 
-  <script src="site.js?v=d1"></script>
+  <script src="site.js"></script>
+  <script src="ea.js"></script>
   <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "30a77df9143f4ba6b9e35cbcad948b07"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

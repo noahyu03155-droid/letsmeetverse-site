@@ -22,10 +22,10 @@
     lifeA1: '两个朋友在圣莫尼卡码头旁的海滨咖啡座喝冰咖啡，第三个朋友挥着手走过来打招呼', lifeA2: '咖啡师隔着柜台递出一杯冰咖啡，窗外是码头', lifeA3: '温馨小公寓的剖面图：床、沙发、小厨房和浴室一应俱全，两个朋友在大窗边的茶几上摆一盆绿植，窗外是城市街景',
     hoodsTitle: '挑一个街区住下',
     hoodsLead: '你的第一间小公寓可以在这四个街区里任选。地图上还有中城和威尼斯，骑单车、坐公交或开车都能到。',
-    h1n: '圣莫尼卡', h1a: 'Santa Monica', h1d: '海滩、码头和海风。',
-    h2n: '好莱坞', h2a: 'Hollywood', h2d: '星星人行道、老剧院和亮闪闪的招牌。',
-    h3n: '韩国城', h3a: 'Koreatown', h3d: '宵夜、KTV，还有总是热热闹闹的咖啡店。',
-    h4n: '洛杉矶市中心', h4a: 'Downtown LA', h4d: '住在 loft 风公寓楼里看天际线。',
+    h1n: '圣莫尼卡', h1d: '海滩、码头和海风。',
+    h2n: '好莱坞', h2d: '星星人行道、老剧院和亮闪闪的招牌。',
+    h3n: '韩国城', h3d: '宵夜、KTV，还有总是热热闹闹的咖啡店。',
+    h4n: '洛杉矶市中心', h4d: '住在 loft 风公寓楼里看天际线。',
     hoodA1: '朋友们开着浅蓝色敞篷车经过码头边的海滨大道', hoodA2: '三个朋友带着一只金毛走在咖啡店外的粉色星星人行道上，身后山坡上是 LetsMeetVerse 字牌和天文台', hoodA3: '从公寓大堂望出去能看到韩国城路牌，朋友们正在领钥匙', hoodA4: '朋友们在小公寓里聚会，窗外是黄昏的市中心天际线',
     gameTitle: '游戏实景',
     gameLead: '上面是宣传插画，下面是网页版的真实截图。',
@@ -65,8 +65,6 @@
     nodes.forEach(function (n) { var k = n.dataset.i18n, v = zh ? ZH[k] : EN[k]; if (v != null) n.innerHTML = v; });
     alts.forEach(function (n) { var k = n.dataset.i18nAlt, v = zh ? ZH[k] : EN['alt:' + k]; if (v != null) n.alt = v; });
     labels.forEach(function (n) { var k = n.dataset.i18nLabel, v = zh ? ZH[k] : EN['label:' + k]; if (v != null) n.setAttribute('aria-label', v); });
-    // the second name on each key fob is in the other language
-    document.querySelectorAll('.alt-name').forEach(function (n) { n.lang = zh ? 'en' : 'zh-CN'; });
     document.documentElement.lang = zh ? 'zh-CN' : 'en';
     document.title = titles[lang] || titles.en;
     document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });

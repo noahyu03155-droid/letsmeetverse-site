@@ -39,7 +39,7 @@
         <button type="button" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
       </div>
-      <a class="btn btn-pink btn-sm nav-play" href="play/" data-i18n="navPlay">Play now</a>
+      <a class="btn btn-pink btn-sm nav-play" href="#download" data-i18n="navPlay">Early Access</a>
     </div>
   </header>
 
@@ -56,9 +56,9 @@
         <div class="hero-side">
           <p class="hero-lede" data-i18n="heroLede">Move into your own starter studio, make friends, work shifts at the café, decorate, and explore real neighborhoods from Santa Monica to Downtown.</p>
           <div class="ctas">
-            <a class="btn btn-pink btn-lg" href="play/">
+            <a class="btn btn-pink btn-lg" href="#download">
               <img src="assets/icons/gamepad.png" alt="" width="48" height="48">
-              <span><strong data-i18n="ctaPlay">Play in browser</strong><small data-i18n="ctaPlaySub">Free, nothing to install</small></span>
+              <span><strong data-i18n="ctaPlay">Early Access</strong><small data-i18n="ctaPlaySub">Access code required</small></span>
             </a>
             <a class="btn btn-blue btn-lg" href="#download">
               <img src="assets/icons/laptop.png" alt="" width="48" height="48">
@@ -158,7 +158,7 @@
           <p class="status" data-i18n="ready">Ready now</p>
           <h3 data-i18n="w1t">In your browser</h3>
           <p data-i18n="w1d">Chrome, Edge, Safari or Firefox, on a computer, tablet or phone. Your town is saved in that browser.</p>
-          <a class="btn btn-pink" href="play/" data-i18n="ctaPlay">Play in browser</a>
+          <a class="btn btn-pink" href="#download" data-i18n="ctaPlay">Early Access</a>
         </li>
         <li class="way">
           <img src="assets/icons/laptop.png" alt="" width="72" height="72">
@@ -181,27 +181,9 @@
       <div class="dl-panel">
         <div class="dl-main">
           <img class="dl-icon" src="assets/icons/laptop.png" alt="" width="88" height="88">
-          <h2 id="dl-title" data-i18n="dlTitle">LetsMeetVerse for Windows</h2>
-          <p data-i18n="dlLead">A small installer that sets the game up just for you, with no admin password. It adds a Start menu shortcut, plays offline, and uninstalls from Settings &gt; Apps.</p>
-          <a class="btn btn-blue btn-lg btn-dl" href="downloads/LetsMeetVerse-Setup-x64.exe" download data-dl="setup">
-            <img src="assets/icons/laptop.png" alt="" width="48" height="48">
-            <span><strong data-i18n="dlSetup">Download installer</strong><small><span data-i18n="dlSetupSub">Windows 10 and 11, 64-bit</span><span class="dl-size" data-size="setup"></span></small></span>
-          </a>
-          <ul class="dl-alt">
-            <li><span data-i18n="dlZipPre">Prefer no install? Get the</span> <a href="downloads/LetsMeetVerse-Windows-x64.zip" download data-dl="zip" data-i18n="dlZip">portable .zip</a><span class="dl-size-p" data-size="zip"></span><span data-i18n="dlZipPost">, unzip it anywhere and run LetsMeetVerse.exe.</span></li>
-            <li data-dl-row="linux"><a href="downloads/LetsMeetVerse-Linux-x64.zip" download data-dl="linux" data-i18n="dlLinux">Linux build (.zip, beta)</a><span class="dl-size" data-size="linux"></span></li>
-            <li data-i18n="dlMac">On a Mac or Chromebook? Play in the browser, it is the same game.</li>
-          </ul>
+          <h2 id="dl-title" data-i18n="eaTitle">Early Access</h2>
+          <p data-i18n="eaLead">LetsMeetVerse is in early access. Playing online and the Windows / Linux downloads are open to players with an access code. The code page opens very soon.</p>
         </div>
-        <aside class="dl-help" aria-labelledby="ss-title">
-          <h3 id="ss-title" data-i18n="ssTitle">Seeing “Windows protected your PC”?</h3>
-          <p data-i18n="ssLead">The app is new and not code-signed yet, so Microsoft Defender SmartScreen checks with you the first time.</p>
-          <ol class="ss-steps">
-            <li><span class="ss-win" aria-hidden="true"><i></i><i></i><u data-i18n="ssMore">More info</u></span><span data-i18n="ss1">Click <b>More info</b></span></li>
-            <li><span class="ss-win" aria-hidden="true"><i></i><i></i><em data-i18n="ssRun">Run anyway</em></span><span data-i18n="ss2">Then click <b>Run anyway</b></span></li>
-          </ol>
-          <p class="fine" data-i18n="ssFine">The game needs Microsoft Edge WebView2, which is built into Windows 11 and up-to-date Windows 10.</p>
-        </aside>
       </div>
     </section>
   </main>
@@ -210,7 +192,7 @@
     <div class="foot-inner">
       <a class="brand brand-foot" href="#top"><span class="word" aria-hidden="true"><span class="w1" data-t="Lets">Lets</span><span class="w2" data-t="Meet">Meet</span><span class="w3" data-t="Verse">Verse</span></span><span class="sr" data-i18n="backTop">Back to top</span></a>
       <nav aria-label="Footer">
-        <a href="play/" data-i18n="ctaPlay">Play in browser</a>
+        <a href="#download" data-i18n="ctaPlay">Early Access</a>
         <a href="#download" data-i18n="navDownload">Download</a>
         <a href="#top" data-i18n="backTop">Back to top</a>
       </nav>
@@ -224,5 +206,6 @@
   </dialog>
 
   <script src="site.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "30a77df9143f4ba6b9e35cbcad948b07"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

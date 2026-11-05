@@ -3,11 +3,11 @@
 (function () {
   var ZH = {
     skip: '跳到正文',
-    navHoods: '街区', navWays: '怎么玩', navDownload: '下载', navPlay: '开始玩',
+    navHoods: '街区', navWays: '怎么玩', navDownload: '下载', navPlay: '抢先体验',
     heroTitle: '拿上钥匙，搬进你在洛杉矶的第一个家。',
     heroLede: '搬进属于你的第一间小公寓，交朋友、去咖啡店打工、布置小窝，从圣莫尼卡一路逛到市中心。',
     bannerAlt: 'LetsMeetVerse，洛杉矶治愈系生活模拟：一群Q版朋友走在种满棕榈树、铺着星星的洛杉矶人行道上',
-    ctaPlay: '在浏览器中玩', ctaPlaySub: '免费，无需安装',
+    ctaPlay: '抢先体验', ctaPlaySub: '需要邀请码',
     ctaWin: '下载 Windows 版', ctaWinSub: '适用于 Windows 10 和 11 的安装包',
     heroNote: '电脑、平板、手机都能玩（手机请横屏）。',
     lifeTitle: '把这座城市过成你的生活',
@@ -35,6 +35,7 @@
     w2t: 'Windows 电脑版', w2d: '安装电脑版，全窗口游玩，可以离线，进度保存在你的电脑上。', w2b: '获取安装包',
     w3t: '和朋友联机', w3d: '目前每个小镇都是单人模式，运行在你自己的设备上。能互相串门的联机小镇正在路上。',
     dlTitle: 'LetsMeetVerse Windows 版',
+    eaTitle: '抢先体验（Early Access）', eaLead: 'LetsMeetVerse 正在抢先体验阶段。在线游玩和 Windows / Linux 下载需要邀请码才能使用，输入邀请码的页面很快开放。',
     dlLead: '小巧的安装包，只为你自己安装，不需要管理员密码。会添加开始菜单快捷方式，可以离线游玩，在“设置 > 应用”里就能卸载。',
     dlSetup: '下载安装包', dlSetupSub: 'Windows 10 和 11，64 位',
     dlZipPre: '不想安装？下载', dlZip: '便携版 .zip', dlZipPost: '，解压到任意位置，双击 LetsMeetVerse.exe 即可。',
@@ -93,7 +94,7 @@
   }
 
   // download sizes come from the files themselves, so there are no numbers to keep in sync
-  var files = { setup: 'downloads/LetsMeetVerse-Setup-x64.exe', zip: 'downloads/LetsMeetVerse-Windows-x64.zip', linux: 'downloads/LetsMeetVerse-Linux-x64.zip' };
+  var files = {};   // downloads are behind Early Access now
   if (location.protocol !== 'file:' && window.fetch) Object.keys(files).forEach(function (k) {
     fetch(files[k], { method: 'HEAD' }).then(function (r) {
       if (!r.ok) { if (k === 'linux') document.querySelectorAll('[data-dl-row="linux"]').forEach(function (e) { e.hidden = true; }); return; }

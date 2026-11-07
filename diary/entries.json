@@ -1,5 +1,214 @@
 [
  {
+  "date": "2026-11-07",
+  "title": {
+   "en": "Lucky Palms, an Art Deco casino",
+   "zh": "Lucky Palms：装饰艺术风的赌场"
+  },
+  "body": {
+   "en": [
+    "Mid-City has a casino now. The building glows at night: an ivory front, a teal tower, a gold CASINO sign and a marquee full of warm bulbs.",
+    "Inside there are slot machines, a roulette table, a cashier booth and a teal lounge. The blackjack tables are the real thing: up to three players per table, and resident players fill the empty seats so a game can always start."
+   ],
+   "zh": [
+    "中城开了一家赌场。夜里整栋楼都会亮：象牙白的外墙、孔雀绿的塔楼、金色的 CASINO 招牌，还有一圈暖光灯泡的雨棚。",
+    "里面有老虎机、轮盘桌、筹码兑换柜台和孔雀绿的休息区。21 点是真的能玩的：每桌最多 3 个玩家，人不够时会有居民坐上来补位，随时都能开局。"
+   ]
+  },
+  "tags": [
+   "buildings",
+   "interactions"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/casino-night.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "The casino at night: a gold CASINO sign above a glowing entrance, the hills and the observatory lit up behind it",
+     "zh": "夜里的赌场：发光的入口上方是金色 CASINO 招牌，后面是亮着灯的山和天文台"
+    }
+   },
+   {
+    "src": "assets/diary/casino-blackjack.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "Inside the casino: residents playing at half-moon green blackjack tables, slot machines along the wall",
+     "zh": "赌场里面：居民在半月形绿色 21 点桌旁打牌，墙边一排老虎机"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-07",
+  "title": {
+   "en": "Jobs you actually play",
+   "zh": "上班不再挂机"
+  },
+  "body": {
+   "en": [
+    "Work is a little game now. Couriers pick up several orders at once, each with a real door and a countdown: on time earns a bonus and a tip, late costs that order's bonus, and a perfect run pays extra.",
+    "Supermarket staff scan baskets and restock shelves with a shared queue of shoppers, and the café's baristas play quick connect-two rounds that get harder and pay more. A rough shift still pays the base wage."
+   ],
+   "zh": [
+    "上班变成了小游戏。外卖骑手一次接好几单，每单都有真实的送达门口和倒计时：准时有奖金和小费，迟到扣那一单的奖金，全部准时还有额外奖励。",
+    "超市店员要给排队的顾客扫码结账、给货架补货；咖啡店店员玩连连看，关卡越往后越难，奖励也越高。就算发挥不好，底薪照样拿。"
+   ]
+  },
+  "tags": [
+   "systems",
+   "interactions"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/jobs-checkout.webp",
+    "w": 1200,
+    "h": 833,
+    "alt": {
+     "en": "A supermarket shift: the checkout panel shows a customer's three items to scan, with shelves and shoppers behind",
+     "zh": "超市上班：结账面板上是顾客要扫的三件商品，后面是货架和顾客"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-07",
+  "title": {
+   "en": "Paint, sell, and play Draw & Guess",
+   "zh": "画画、卖画，还有你画我猜"
+  },
+  "body": {
+   "en": [
+    "Set up an easel in a park or the museum and paint on a real little canvas. Hang your work at home or put it up in the Art Market with a fixed price or an auction.",
+    "The city calendar now lists group events, starting with Draw & Guess: teams of two take turns drawing and guessing, and the winning pair takes home 500 coins."
+   ],
+   "zh": [
+    "在公园或博物馆支起画架，在真的小画布上画画。画好的作品可以挂在家里，也可以拿去艺术集市，自己定价或者拍卖。",
+    "城市日历上有了团体活动，第一个是你画我猜：两人一队，轮流画和猜，赢的一队拿走 500 金币。"
+   ]
+  },
+  "tags": [
+   "interactions",
+   "systems"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/art-studio.webp",
+    "w": 1200,
+    "h": 833,
+    "alt": {
+     "en": "The painting studio: brushes and a colour palette on the left, a calm sunset over the sea on the canvas",
+     "zh": "画画工作室：左边是画笔和调色盘，画布上是海上的落日"
+    }
+   },
+   {
+    "src": "assets/diary/draw-guess.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "A Draw & Guess round: a simple house drawn on the board, a guess box and a one-minute timer",
+     "zh": "你画我猜：画板上画了一座小房子，旁边是猜词框和一分钟倒计时"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-07",
+  "title": {
+   "en": "Coin runs on the boardwalk",
+   "zh": "海边步道上的金币跑酷"
+  },
+  "body": {
+   "en": [
+    "Jogging can be a game now. Pick a goal of 20 to 100 coins, then run down the boardwalk, a park path or a city street: switch lanes, jump the benches and grab the coins.",
+    "Hit your goal and the jog's reward gets a 10% bonus. Collect half and you get half."
+   ],
+   "zh": [
+    "慢跑可以变成小游戏了。先选一个目标，20 到 100 枚金币，然后在海边步道、公园小路或城市街道上跑：换道、跳过长椅、吃金币。",
+    "达到目标，慢跑奖励额外加 10%；只吃到一半，就拿一半。"
+   ]
+  },
+  "tags": [
+   "interactions"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/coin-run.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "A coin run on the beach boardwalk between rows of palm trees, the coin counter at 10 of 40",
+     "zh": "在两排棕榈树之间的海边步道上跑酷，金币计数 10 / 40"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-07",
+  "title": {
+   "en": "Parking, Palm Motors and cozier nights",
+   "zh": "停车场、Palm Motors，还有更舒服的夜晚"
+  },
+  "body": {
+   "en": [
+    "Hollywood has public parking and Palm Motors, a car dealership where you can browse, pick a paint colour and take a test drive.",
+    "Double beds really fit two now, and you sleep under the duvet. We also closed the gaps in every hairstyle, put a carousel hall on the pier, and the Status page now tells you where to go to raise each need or skill."
+   ],
+   "zh": [
+    "好莱坞有了公共停车场和 Palm Motors 车行：可以看车、挑车漆颜色，还能试驾。",
+    "双人床现在真的能睡两个人，而且是盖着被子睡。我们还修好了所有发型露头皮的地方，码头上多了一座旋转木马馆；状态页也会告诉你，想提升哪项需求或技能该去哪里。"
+   ]
+  },
+  "tags": [
+   "buildings",
+   "world"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/palm-motors.webp",
+    "w": 1200,
+    "h": 833,
+    "alt": {
+     "en": "Palm Motors in Hollywood: a glass showroom on a sunny street corner with palm trees and a parking sign",
+     "zh": "好莱坞的 Palm Motors：阳光街角的玻璃展厅，周围是棕榈树和停车标志"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-06",
+  "title": {
+   "en": "LA became a planet",
+   "zh": "洛杉矶变成了一颗星球"
+  },
+  "body": {
+   "en": [
+    "The city no longer ends at an edge. Los Angeles now wraps around a small planet, the streets have three times the room, and there's open land waiting for new neighborhoods.",
+    "A day also moves faster: a full 24 hours now takes 15 real minutes. Friends who share their location show up on the City Map, so you can tap one and walk over. Bus stops are fewer now, and you can board at every one."
+   ],
+   "zh": [
+    "城市不再有尽头。洛杉矶现在绕着一颗小星球连成一圈，街道之间的空间是原来的三倍，还留了空地给以后的新街区。",
+    "时间也过得更快了：现实 15 分钟就是游戏里一整天。开了位置分享的好友会出现在城市地图上，点一下就能走过去找 TA。公交站少了，但每一站都能上车。"
+   ]
+  },
+  "tags": [
+   "world",
+   "systems"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/friends-map.webp",
+    "w": 1200,
+    "h": 555,
+    "alt": {
+     "en": "The City Map on a phone: pink pins for two friends, one selected with a Go to them button",
+     "zh": "手机上的城市地图：两个好友的粉色头像针，选中其中一个后出现“去找 TA”按钮"
+    }
+   }
+  ]
+ },
+ {
   "date": "2026-11-05",
   "title": {
    "en": "Every window got the Home Shop look",

@@ -1,5 +1,182 @@
 [
  {
+  "date": "2026-11-08",
+  "title": {
+   "en": "Palm Fortune slots and a real roulette wheel",
+   "zh": "Palm Fortune 老虎机和真正的轮盘"
+  },
+  "body": {
+   "en": [
+    "The slot machines and the roulette table at Lucky Palms are real games now. Palm Fortune has three reels, bet sizes and a paytable you can open any time.",
+    "Roulette is the European single-zero wheel. Up to six players share a table and bet on numbers, red or black, odd or even, high or low, dozens and columns. Everything is played with in-game coins only, and the gaming floor is for players 18 and over."
+   ],
+   "zh": [
+    "Lucky Palms 的老虎机和轮盘桌现在都能真的玩了。Palm Fortune 有三个转轮，可以选押注大小，赔率表随时能打开看。",
+    "轮盘是欧式单零轮盘，每桌最多 6 个人一起玩，可以押数字、红黑、单双、大小、打和列。全部只用游戏币，赌场只对 18 岁以上的玩家开放。"
+   ]
+  },
+  "tags": [
+   "interactions",
+   "ui"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/lucky-slots.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "Palm Fortune slot machine after a win: three reels showing a bell, a gold bar and a seven",
+     "zh": "Palm Fortune 老虎机中奖的画面：三个转轮停在铃铛、金条和 7 上"
+    }
+   },
+   {
+    "src": "assets/diary/lucky-roulette.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "The roulette table at Lucky Palms with the wheel on the left and the betting layout on the right",
+     "zh": "Lucky Palms 的轮盘桌：左边是转盘，右边是下注区"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-08",
+  "title": {
+   "en": "Autopilot: your character lives on for two hours a day",
+   "zh": "挂机：每天 2 小时，角色自己过日子"
+  },
+  "body": {
+   "en": [
+    "Busy? Switch on Autopilot from the phone and your character carries on without you: they go to their shift, eat, rest, wash and hang out, even after you close the game.",
+    "Everyone gets two real hours a day. Autopilot work pays the base wage only, it never gambles or buys anything big, and when you come back a \"While you were away\" card tells you what happened."
+   ],
+   "zh": [
+    "没空玩的时候，在手机里打开「挂机」，角色会自己过日子：去上班、吃饭、休息、洗漱、找人聊天，关掉游戏也会继续。",
+    "每人每天有现实时间 2 小时。挂机上班只拿底薪，不会去赌博，也不会买大件东西。回来的时候会有一张「你不在时」的卡片，告诉你这段时间发生了什么。"
+   ]
+  },
+  "tags": [
+   "systems",
+   "characters"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/autopilot-walk.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "A character with an AUTO tag walking to work in Koreatown while the Autopilot card shows the time left today",
+     "zh": "带着 AUTO 标签的角色正走去韩国城上班，挂机卡片显示今天还剩多少时间"
+    }
+   },
+   {
+    "src": "assets/diary/autopilot-away.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "The While you were away card: time used, shifts worked, wallet change and the needs bars",
+     "zh": "「你不在时」卡片：用了多少时间、上了几个班、钱包变化和各项状态"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-08",
+  "title": {
+   "en": "Sleeping under the duvet",
+   "zh": "盖着被子睡觉"
+  },
+  "body": {
+   "en": [
+    "Beds used to swallow everyone but their heads. Now you can see the shape of the body under the duvet, the cover folds back at the chest, and shoulders and hands stay on top.",
+    "Getting in and out of bed has its own little motion, and it works the same in single beds, double beds, hotel rooms and the studio."
+   ],
+   "zh": [
+    "以前躺上床只剩一颗头露在外面。现在被子底下看得出身体轮廓，被角折在胸口，肩膀和双手露在上面。",
+    "上床、下床也有自己的小动作，单人床、双人床、酒店和小公寓都一样。"
+   ]
+  },
+  "tags": [
+   "characters"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/duvet-sleep.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "Two friends asleep in a double bed under a pink duvet in a sunny studio",
+     "zh": "两个朋友在阳光小公寓的双人床上盖着粉色被子睡觉"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-08",
+  "title": {
+   "en": "What you buy is what you wear",
+   "zh": "买到的就是穿上的"
+  },
+  "body": {
+   "en": [
+    "Shop pictures and the clothes on your character now come from the same 3D model, so the cream sunglasses in the shop are the cream sunglasses on your face.",
+    "Every item was checked on every body type, hairstyle and pose: nothing floats, clips through or shows skin where it shouldn't, and a render check catches it if it ever does."
+   ],
+   "zh": [
+    "商店里的图片和穿在角色身上的衣服，现在用的是同一个 3D 模型。商店里看到奶油色框的墨镜，戴上就是那副墨镜。",
+    "每件衣服都在每种体型、发型和动作下检查过：不会浮起来、不会穿模，也不会露出不该露的地方。以后如果出问题，自动渲染检查会拦下来。"
+   ]
+  },
+  "tags": [
+   "characters",
+   "ui"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/shades-shop.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "The Fashion District Outlet shop with the cream sunglasses selected",
+     "zh": "Fashion District Outlet 服饰店，选中了奶油色框的墨镜"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-08",
+  "title": {
+   "en": "A new City Map",
+   "zh": "全新的城市地图"
+  },
+  "body": {
+   "en": [
+    "Press M and the City Map is now a clean illustrated map: districts in soft colours, the main streets, pins for homes, food, shops and work, and your friends.",
+    "Drag to explore, scroll to zoom and search for a place by name. The weather icon in the top-left corner now has every kind of weather by day and night, and the food trucks were rebuilt as little toy kitchens."
+   ],
+   "zh": [
+    "按 M 打开的城市地图换成了清爽的插画地图：街区用柔和的颜色区分，画出主要街道，还标出了家、吃的、商店、上班地点和朋友的位置。",
+    "可以拖动、滚轮缩放，也可以直接搜索地名。左上角的天气图标补齐了白天和夜晚的各种天气，餐车也重新做成了小玩具厨房。"
+   ]
+  },
+  "tags": [
+   "ui",
+   "world"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/citymap-new.webp",
+    "w": 1200,
+    "h": 750,
+    "alt": {
+     "en": "The illustrated City Map with Hollywood, Koreatown, Downtown LA, Santa Monica and Venice",
+     "zh": "插画风的城市地图，标着好莱坞、韩国城、市中心、圣莫尼卡和威尼斯"
+    }
+   }
+  ]
+ },
+ {
   "date": "2026-11-07",
   "title": {
    "en": "Lucky Palms, an Art Deco casino",

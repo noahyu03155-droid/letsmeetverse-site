@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-11-11",
+  "title": {
+   "en": "Mahjong from your own seat",
+   "zh": "坐在自己的位子上打麻将"
+  },
+  "body": {
+   "en": [
+    "The mahjong screen at Four Corners is now the table itself, seen from your seat. Your hand runs along the bottom in big tiles, the three other players sit around the felt with their faces and names, and everyone’s discards lie in front of them where you’d expect.",
+    "When it’s your turn, pick a tile and a Discard bubble pops up. When someone throws a tile you can take, Pong, Kong, Chow, Win and Pass appear as round bubbles in the middle of the table with their own countdown.",
+    "Table settings, tea and both rule sheets moved into a drawer behind the menu button, so the table stays clear. It works the same for Hong Kong and Sichuan rules, on a computer or a phone held sideways."
+   ],
+   "zh": [
+    "Four Corners 的麻将界面现在就是牌桌本身，从你的座位看出去。你的手牌以大牌排在最下面，另外三家带着头像和名字围坐在牌桌旁，每家打出的牌就摆在各自面前。",
+    "轮到你时，选一张牌，就会弹出“打出”气泡。别人打出你能要的牌时，碰、杠、吃、胡、过会以圆形气泡出现在牌桌中央，并带有自己的倒计时。",
+    "牌桌设置、茶水和两份规则说明收进了菜单按钮后面的抽屉，桌面更干净。港式和四川麻将都适用，电脑和横屏手机都能玩。"
+   ]
+  },
+  "tags": [
+   "ui",
+   "interactions"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/mahjong-table.webp",
+    "w": 1440,
+    "h": 900,
+    "alt": {
+     "en": "The mahjong table seen from the player’s seat: a row of large tiles along the bottom, three opponents with portraits around a green table, discards in front of each seat and a pink Discard bubble",
+     "zh": "从玩家座位看到的麻将桌：底部一排大手牌，绿色牌桌周围是三位带头像的对手，各家面前是打出的牌，中间有一个粉色的“打出”气泡"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-11",
+  "title": {
+   "en": "A fairer stock market",
+   "zh": "更公平的股市"
+  },
+  "body": {
+   "en": [
+    "Investing had become a sure thing: news about a company was good more often than bad, and each piece of good news moved the price a lot, so nearly anything you held for a few days went up.",
+    "Now news is as likely to be bad as good, and its size fits the company: the index fund barely moves on a headline, single shares move more, and LA Coin swings hardest. Shares also move together when the whole market has a good or a bad day, so buying a bit of everything no longer removes the risk.",
+    "The index fund still pays more than the bank on average, but you can lose money in any week. Savings in the bank still earn steady interest with no risk."
+   ],
+   "zh": [
+    "之前投资几乎稳赚：公司的新闻利好多于利空，每条利好又会把股价推高一大截，所以不管买什么，拿几天几乎都会涨。",
+    "现在新闻好坏各半，幅度也和公司相称：指数基金几乎不受单条新闻影响，个股波动更大，洛城币起伏最剧烈。大盘走强或走弱时，各支股票会一起涨跌，所以每样买一点也分散不掉风险。",
+    "指数基金的平均收益仍然高于银行，但任何一周都有可能亏钱。银行存款依旧稳稳生息，没有风险。"
+   ]
+  },
+  "tags": [
+   "systems"
+  ],
+  "images": []
+ },
+ {
+  "date": "2026-11-11",
+  "title": {
+   "en": "Sign in with Google, and a short film",
+   "zh": "Google 登录上线，还有一支短片"
+  },
+  "body": {
+   "en": [
+    "You can now pre-register and sign in with your Google account. The game only receives your Google account ID, your email address and your first name; it never sees your Google password or anything else in your account.",
+    "The website has a privacy policy and terms of service, linked from the bottom of every page.",
+    "There’s also a new 20-second animated short on the home page, Starlit Rooftop Party: two friends, string lights and a shooting star over the LA coast."
+   ],
+   "zh": [
+    "现在可以用 Google 账号预约和登录了。游戏只会收到你的 Google 账号 ID、邮箱和名字，看不到你的 Google 密码，也接触不到账号里的其他内容。",
+    "官网新增了隐私政策和服务条款，每个页面底部都有链接。",
+    "首页还多了一支 20 秒的动画短片《星光天台派对》：两个朋友、一串小灯，还有划过洛杉矶海岸的一颗流星。"
+   ]
+  },
+  "tags": [
+   "systems",
+   "ui"
+  ],
+  "images": []
+ },
+ {
   "date": "2026-11-10",
   "title": {
    "en": "A new logo",

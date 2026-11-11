@@ -51,6 +51,7 @@
     eaL3: '<b>Linux 版</b>（测试版），同样的电脑版。',
     backTop: '回到顶部', close: '关闭',
     footMade: '© 2026 LetsMeetVerse。在真实的洛杉矶，过一段治愈的生活。',
+    footPrivacy: '隐私政策', footTerms: '服务条款',
     footCredits: '插画为宣传美术，截图来自游戏本身。字体：Nunito、Fredoka 与 Bree Serif（SIL OFL）。电脑版基于 Neutralinojs。'
   };
   var PAGE = window.LMV_I18N || {};

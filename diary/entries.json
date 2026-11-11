@@ -1,5 +1,152 @@
 [
  {
+  "date": "2026-11-10",
+  "title": {
+   "en": "A new logo",
+   "zh": "全新 logo"
+  },
+  "body": {
+   "en": [
+    "LetsMeetVerse has a new logo: puffy pink, sky-blue and butter-yellow letters with a little heart speech bubble on top.",
+    "You’ll find it on the sign-in screen, in the character creator, on this website and its banner, and on the app icons for your phone’s home screen and the Windows app (the small icons carry just the heart bubble, so it stays clear)."
+   ],
+   "zh": [
+    "LetsMeetVerse 换上了全新的 logo：圆滚滚的粉色、天蓝和奶油黄字母，头顶还有一个装着爱心的对话框。",
+    "登录页、创建角色页、这个网站和首页横幅，还有手机桌面图标和 Windows 版的程式图标都换成了新 logo（小图标只用爱心对话框，缩小了也看得清）。"
+   ]
+  },
+  "tags": [
+   "ui"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/logo-signin.webp",
+    "w": 990,
+    "h": 900,
+    "alt": {
+     "en": "The sign-in screen with the new LetsMeetVerse logo above chibi friends on a star-paved LA sidewalk",
+     "zh": "登录页上的新 LetsMeetVerse logo，下面是一群Q版朋友走在铺着星星的洛杉矶人行道上"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-10",
+  "title": {
+   "en": "Pre-registration is open",
+   "zh": "开放预约"
+  },
+  "body": {
+   "en": [
+    "You can now pre-register right here on the website: leave your email, and you’ll be the first to know when more of LA opens its doors. We only email you about LetsMeetVerse, and you can unsubscribe any time.",
+    "Signing up with your Google account, on the site and in the game, is coming next."
+   ],
+   "zh": [
+    "现在可以直接在网站上预约了：留下邮箱，洛杉矶开放更多名额时你会第一个知道。我们只发 LetsMeetVerse 相关的邮件，随时可以退订。",
+    "用 Google 账号预约、在游戏里用 Google 登录，也马上就来。"
+   ]
+  },
+  "tags": [
+   "systems",
+   "ui"
+  ]
+ },
+ {
+  "date": "2026-11-10",
+  "title": {
+   "en": "Fixing the map: Ocean Avenue, the pier and the car lots",
+   "zh": "修地图：Ocean Ave、码头和停车场"
+  },
+  "body": {
+   "en": [
+    "Ocean Avenue sat on a 6-metre plateau, with steep paved slopes and little cliffs all around its edges. Now only the bluff-top park is raised, climbing up from the sand; the street, the café, Coastline Studios and the blocks behind them are back on level ground.",
+    "The pier’s deck and the carousel’s platform now meet, so there’s no strip of sea between them any more. Buildings also stop turning see-through when you stand at their door.",
+    "Gas stations, car washes, drive-thrus and public car parks used to sit in the far corner of a huge empty lot. They now stand right on their street, and the spare asphalt behind them has become a little green with shade trees."
+   ],
+   "zh": [
+    "Ocean Ave 以前整条街被抬高成 6 米的高台，四边都是很陡的铺砖斜坡和小断崖。现在只有海边的崖顶公园是高的，从沙滩一路坡上去；马路、咖啡店、Coastline Studios 和后面的街区都回到了平地。",
+    "码头甲板和旋转木马平台接上了，中间不再隔着一条海水。站在楼门口时，整栋楼也不会再变成半透明了。",
+    "加油站、洗车场、得来速和公共停车场以前缩在一大片空停车场的角落，现在都挪到了马路边，后面空出来的柏油地变成了种着树的小草地。"
+   ]
+  },
+  "tags": [
+   "world",
+   "buildings"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/pier-joined.webp",
+    "w": 782,
+    "h": 392,
+    "alt": {
+     "en": "The Seabreeze Carousel on one continuous pier deck, string lights along the rails",
+     "zh": "海风旋转木马馆和连成一整块的码头甲板，栏杆上挂着串灯"
+    }
+   },
+   {
+    "src": "assets/diary/fuel-green.webp",
+    "w": 782,
+    "h": 392,
+    "alt": {
+     "en": "A gas station by the street with a lawn and rows of young trees behind it",
+     "zh": "马路边的加油站，后面是一片草地和一排排小树"
+    }
+   },
+   {
+    "src": "assets/diary/lot-green.webp",
+    "w": 782,
+    "h": 392,
+    "alt": {
+     "en": "A public car park beside the Walk of Stars, with palms and trees where empty asphalt used to be",
+     "zh": "星光大道旁的公共停车场，原来空着的柏油地种上了棕榈和小树"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-09",
+  "title": {
+   "en": "Hop, and Sichuan mahjong at Four Corners",
+   "zh": "可以跳了，四角麻将馆加入四川麻将"
+  },
+  "body": {
+   "en": [
+    "Press Space or the jump button to hop. Everyone nearby sees it, so you can wave hello with a little bounce.",
+    "Four Corners Mahjong Club now has Sichuan tables (blood battle to the end): 108 tiles, swap three tiles, pick a suit to give up, and play keeps going after the first player wins until three have won or the wall runs out. Hong Kong style tables are still there."
+   ],
+   "zh": [
+    "按空格键或跳跃按钮就能跳一下，附近的人都看得到，打招呼的时候可以蹦一蹦。",
+    "四角麻将馆新开了四川麻将桌（血战到底）：108 张牌、换三张、定缺，有人胡了还会接着打，直到三家胡牌或者牌摸完。港式麻将桌也都还在。"
+   ]
+  },
+  "tags": [
+   "interactions"
+  ]
+ },
+ {
+  "date": "2026-11-09",
+  "title": {
+   "en": "Livelier driving, rain you can see, and Santa Monica’s new look",
+   "zh": "开车更有感觉、看得见的雨，还有圣莫尼卡新面貌"
+  },
+  "body": {
+   "en": [
+    "Cars now steer with turning wheels and a bit of suspension bounce. Press E to get in or out, and invite friends to ride along.",
+    "Rain falls in soft streaks with little splash rings on the pavement, puddles reflect the sky, and everyone carries an umbrella, with new recorded sounds for rain and cars.",
+    "Santa Monica got new hand-made 3D buildings and street pieces, everything across LA now shares one consistent scale, and the City Map has a pin for every place plus a list by category."
+   ],
+   "zh": [
+    "开车时轮子会跟着转向，车身还会轻轻颠一下。按 E 上车下车，也可以邀请朋友一起坐。",
+    "下雨时能看到细细的雨丝，路面会溅起小水花，水坑会映出天空，大家都撑起了雨伞；雨声和车声也都换成了新的实录音效。",
+    "圣莫尼卡换上了新的 3D 建筑和街道小物件，全洛杉矶的比例统一了，城市地图上每个地点都有图钉，还能按分类列出来。"
+   ]
+  },
+  "tags": [
+   "world",
+   "audio"
+  ]
+ },
+ {
   "date": "2026-11-08",
   "title": {
    "en": "Palm Fortune slots and a real roulette wheel",

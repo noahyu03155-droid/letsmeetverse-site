@@ -26,7 +26,7 @@
 
   <header class="nav" id="top">
     <a class="brand" href="#top">
-      <span class="word" aria-hidden="true"><span class="w1" data-t="Lets">Lets</span><span class="w2" data-t="Meet">Meet</span><span class="w3" data-t="Verse">Verse</span></span>
+      <img class="logo" src="img/logo-512.webp" alt="" width="512" height="333" decoding="async">
       <span class="sr">LetsMeetVerse</span>
     </a>
     <nav class="nav-links" aria-label="Sections">
@@ -57,16 +57,37 @@
         <div class="hero-side">
           <p class="hero-lede" data-i18n="heroLede">Move into your own starter studio, make friends, work shifts at the café, decorate, and explore real neighborhoods from Santa Monica to Downtown.</p>
           <div class="ctas">
-            <a class="btn btn-pink btn-lg" href="early-access/" data-ea>
+            <a class="btn btn-pink btn-lg" href="#signup">
+              <img src="assets/icons/sparkles.png" alt="" width="48" height="48">
+              <span><strong data-i18n="ctaPre">Pre-register</strong><small data-i18n="ctaPreSub">Be first in when LA opens up</small></span>
+            </a>
+            <a class="btn btn-blue btn-lg" href="early-access/" data-ea>
               <img src="assets/icons/gamepad.png" alt="" width="48" height="48">
               <span><strong data-i18n="ctaEA">Get Early Access</strong><small data-i18n="ctaEASub">Enter your code to play</small></span>
             </a>
-            <a class="btn btn-blue btn-lg" href="diary/">
-              <img src="assets/icons/chat.png" alt="" width="48" height="48">
-              <span><strong data-i18n="ctaDiary">Read the Dev Diary</strong><small data-i18n="ctaDiarySub">What's new in every release</small></span>
-            </a>
           </div>
           <p class="hero-note" data-i18n="heroNote">Online in your browser on computers, tablets and phones (turn your phone sideways), or as an app for Windows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- pre-registration: e-mail or Google, stored on the game server (prereg.js → server/signup.js) -->
+    <section class="prereg" id="signup" aria-labelledby="pr-title">
+      <div class="pr-card">
+        <img class="pr-logo" src="img/logo-mark.webp" alt="" width="344" height="300" loading="lazy">
+        <div class="pr-body">
+          <h2 id="pr-title" data-i18n="prTitle">Pre-register for LetsMeetVerse</h2>
+          <p class="pr-lead" data-i18n="prLead">Leave your email and you’ll be the first to know when more of LA opens its doors.</p>
+          <form class="pr-form" data-prereg novalidate>
+            <label class="sr" for="pr-email" data-i18n="prEmailLabel">Email address</label>
+            <input id="pr-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="160" required placeholder="you@example.com">
+            <input class="pr-hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-pink" type="submit" data-i18n="prSubmit">Pre-register</button>
+          </form>
+          <label class="pr-news"><input type="checkbox" name="news" data-pr-news><span data-i18n="prNews">Also email me Dev Diary updates</span></label>
+          <div class="pr-google" data-pr-google hidden><span class="pr-or" data-i18n="prOr">or</span><div class="pr-gbtn" data-pr-gbtn></div></div>
+          <p class="pr-msg" data-pr-msg role="status" aria-live="polite"></p>
+          <p class="pr-fine"><span data-i18n="prFine">We only email you about LetsMeetVerse, and you can unsubscribe any time.</span> <span class="pr-count" data-pr-count hidden></span></p>
         </div>
       </div>
     </section>
@@ -202,7 +223,7 @@
 
   <footer class="foot">
     <div class="foot-inner">
-      <a class="brand brand-foot" href="#top"><span class="word" aria-hidden="true"><span class="w1" data-t="Lets">Lets</span><span class="w2" data-t="Meet">Meet</span><span class="w3" data-t="Verse">Verse</span></span><span class="sr" data-i18n="backTop">Back to top</span></a>
+      <a class="brand brand-foot" href="#top"><img class="logo" src="img/logo-512.webp" alt="" width="512" height="333" decoding="async"><span class="sr" data-i18n="backTop">Back to top</span></a>
       <nav aria-label="Footer">
         <a href="early-access/" data-ea data-i18n="navEA">Early Access</a>
         <a href="diary/" data-i18n="navDiary">Dev Diary</a>
@@ -219,6 +240,7 @@
 
   <script src="site.js"></script>
   <script src="ea.js"></script>
+  <script src="prereg.js"></script>
   <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "30a77df9143f4ba6b9e35cbcad948b07"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

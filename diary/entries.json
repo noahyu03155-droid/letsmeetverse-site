@@ -73,35 +73,7 @@
    "world",
    "buildings"
   ],
-  "images": [
-   {
-    "src": "assets/diary/pier-joined.webp",
-    "w": 782,
-    "h": 392,
-    "alt": {
-     "en": "The Seabreeze Carousel on one continuous pier deck, string lights along the rails",
-     "zh": "海风旋转木马馆和连成一整块的码头甲板，栏杆上挂着串灯"
-    }
-   },
-   {
-    "src": "assets/diary/fuel-green.webp",
-    "w": 782,
-    "h": 392,
-    "alt": {
-     "en": "A gas station by the street with a lawn and rows of young trees behind it",
-     "zh": "马路边的加油站，后面是一片草地和一排排小树"
-    }
-   },
-   {
-    "src": "assets/diary/lot-green.webp",
-    "w": 782,
-    "h": 392,
-    "alt": {
-     "en": "A public car park beside the Walk of Stars, with palms and trees where empty asphalt used to be",
-     "zh": "星光大道旁的公共停车场，原来空着的柏油地种上了棕榈和小树"
-    }
-   }
-  ]
+  "images": []
  },
  {
   "date": "2026-11-09",

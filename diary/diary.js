@@ -7,6 +7,7 @@
 //     "tags": [buildings | interactions | characters | audio | ui | world | systems],
 //     "images": [{ "src": "assets/diary/name.webp", "w": 1200, "h": 675, "alt": { "en", "zh" } }] }
 // Pictures are in-game screenshots, about 1200 px wide; an optional name-640.webp next to one is used on phones.
+// An optional video has src, poster, w, h and bilingual alt, and plays on request.
 // The first picture fills the card, a second one is tucked into its corner. web/site/assemble.mjs checks the file.
 (function () {
   window.LMV_I18N = {
@@ -72,12 +73,18 @@
       '<img src="' + esc(small || src) + '"' + (small ? ' srcset="' + esc(small) + ' 640w, ' + esc(src) + ' ' + (im.w || 1200) + 'w" sizes="' + size + '"' : '') +
       (im.w && im.h ? ' width="' + im.w + '" height="' + im.h + '"' : '') + ' loading="lazy" decoding="async" alt="' + alt + '"></button>';
   }
+  function video(v) {
+    return '<video class="pc-video" src="' + esc('../' + v.src) + '" poster="' + esc('../' + v.poster) +
+      '" width="' + esc(v.w) + '" height="' + esc(v.h) + '" aria-label="' + esc(pick(v.alt)) +
+      '" muted loop playsinline controls preload="none"></video>';
+  }
   function card(e) {
     var tags = (e.tags || []).filter(function (t) { return TAGS[t]; }), main = TAGS[tags[0]] || TAGS.world, ims = (e.images || []).slice(0, 2);
     return '<li class="pc' + (ims.length ? '' : ' pc-text') + (ims[1] ? ' has-tuck' : '') + '" data-tags="' + tags.join(' ') + '" style="--c:' + main.c + '"><article>' +
       (ims.length ? '<div class="pc-pic">' + photo(ims[0], 'main') + (ims[1] ? photo(ims[1], 'tuck') : '') + '</div>' : '') +
       '<div class="pc-back"><span class="stamp" aria-hidden="true"><i><b><img src="../assets/icons/' + main.icon + '.png" alt="" width="40" height="40"></b></i></span>' +
       '<h3>' + esc(pick(e.title)) + '</h3>' + paras(e.body).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') +
+      (e.video ? video(e.video) : '') +
       '<ul class="pc-tags" aria-label="' + esc(S[lang].topics) + '">' + tags.map(function (t) { return '<li style="--c:' + TAGS[t].c + '">' + esc(TAGS[t][lang]) + '</li>'; }).join('') + '</ul></div></article></li>';
   }
 

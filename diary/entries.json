@@ -1,5 +1,318 @@
 [
  {
+  "date": "2026-11-17",
+  "title": {
+   "en": "A drive above the city",
+   "zh": "开上城市高架"
+  },
+  "body": {
+   "en": [
+    "I opened up more of the freeway network. Take an on-ramp from the street, follow the lanes above the city, and use an exit to get back down.",
+    "At the big interchanges you can take a connector straight from one freeway to another."
+   ],
+   "zh": [
+    "我又开放了一些高速公路。你可以从街道驶上匝道，沿着城市上方的车道开，再从出口回到地面。",
+    "到了大型立交桥，可以走联络匝道，直接换到另一条高速公路。"
+   ]
+  },
+  "tags": [
+   "world",
+   "systems"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/freeway-drive.webp",
+    "w": 1440,
+    "h": 900,
+    "alt": {
+     "en": "A car on a freeway deck with lane markings and streets below",
+     "zh": "一辆车开在有车道线的高架高速公路上，下方是市区街道"
+    }
+   }
+  ],
+  "video": {
+   "src": "assets/diary/freeway-drive.mp4",
+   "poster": "assets/diary/freeway-drive-poster.webp",
+   "w": 1920,
+   "h": 1080,
+   "alt": {
+    "en": "Gameplay of a car driving along an elevated freeway over city streets",
+    "zh": "实机画面：汽车沿城市街道上方的高架高速公路行驶"
+   }
+  }
+ },
+ {
+  "date": "2026-11-17",
+  "title": {
+   "en": "A little street slapstick",
+   "zh": "街头闹剧"
+  },
+  "body": {
+   "en": [
+    "I gave the streets a bit of slapstick. A shove can make a citizen stagger, and a car bump can send one tumbling. They get back up on their own.",
+    "People nearby may stop, come over and pull out their phones."
+   ],
+   "zh": [
+    "我给街头加了点闹剧。推一下会让市民踉跄，碰到车也可能摔一跤。他们过一会儿就会自己爬起来。",
+    "附近的人有时会停下脚步，围过来拿出手机拍。"
+   ]
+  },
+  "tags": [
+   "interactions",
+   "characters"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/street-slapstick.webp",
+    "w": 1440,
+    "h": 900,
+    "alt": {
+     "en": "The player and a group of citizens by the curb after a shove",
+     "zh": "推搡发生后，玩家和几位市民站在路边"
+    }
+   }
+  ],
+  "video": {
+   "src": "assets/diary/street-slapstick.mp4",
+   "poster": "assets/diary/street-slapstick-poster.webp",
+   "w": 1920,
+   "h": 1080,
+   "alt": {
+    "en": "Gameplay of a shove and nearby citizens gathering with phones",
+    "zh": "实机画面：玩家推了一下，附近的市民围过来拿出手机"
+   }
+  }
+ },
+ {
+  "date": "2026-11-17",
+  "title": {
+   "en": "A patch of land to call home",
+   "zh": "一块属于自己的住宅地"
+  },
+  "body": {
+   "en": [
+    "I opened the first home lots. Walk up to a for-sale board to see the lot and buy it, then make the yard your own with paths, plants or a fence.",
+    "I left the walk to the front door and the building pad clear. For now you can buy the land and work on the yard."
+   ],
+   "zh": [
+    "我开放了首批住宅地块。走到出售牌旁就能查看和购买，然后用小路、植物或围栏布置自己的院子。",
+    "我留出了通往前门的小路和盖房的位置。现在可以先买地，再慢慢布置院子。"
+   ]
+  },
+  "tags": [
+   "buildings",
+   "interactions",
+   "world"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/home-lot.webp",
+    "w": 1440,
+    "h": 900,
+    "alt": {
+     "en": "A staked residential lawn with a sale board by the sidewalk",
+     "zh": "人行道旁的待售住宅地，有草坪、界桩和出售牌"
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-16",
+  "title": {
+   "en": "The phone app build",
+   "zh": "手机版应用准备好了"
+  },
+  "body": {
+   "en": [
+    "I put together phone app builds for internal testing. They play sideways and use the same city and account as the browser game.",
+    "I set the controls away from the edges of the screen and added a Retry screen for when the connection drops."
+   ],
+   "zh": [
+    "我准备了供内部测试的手机版应用。横着拿手机就能玩，用的还是网页版的城市和账号。",
+    "我把按钮往屏幕里挪了挪，避开边缘。网络断开时，也可以在提示页上重试。"
+   ]
+  },
+  "tags": [
+   "ui",
+   "systems"
+  ],
+  "images": []
+ },
+ {
+  "date": "2026-11-16",
+  "title": {
+   "en": "Account settings and chat safety",
+   "zh": "账号设置和聊天安全"
+  },
+  "body": {
+   "en": [
+    "I made names in chat clickable. Tap a name to open a player card, where you can block or report them. You can also delete your account from Settings in the game."
+   ],
+   "zh": [
+    "我把聊天里的名字做成了可以点的。点开玩家名片，就能屏蔽或举报。想删除账号，也可以直接在游戏里打开设置操作。"
+   ]
+  },
+  "tags": [
+   "ui",
+   "systems"
+  ],
+  "images": []
+ },
+ {
+  "date": "2026-11-16",
+  "title": {
+   "en": "One tile, more than one winner",
+   "zh": "一张牌，多家胡"
+  },
+  "body": {
+   "en": [
+    "I fixed how the table shows a winning tile. A robbed kong passes the tile to the winning hand. In Sichuan rules, several players can still win on one discard, and the table shows the shared tile in each winning hand."
+   ],
+   "zh": [
+    "我修了牌桌上胡牌时的牌面显示。抢杠时，那张牌会进胡牌玩家的手牌。四川麻将仍然可以一炮多响，每家的胡牌牌面都会显示大家共用的那张牌。"
+   ]
+  },
+  "tags": [
+   "interactions",
+   "ui"
+  ],
+  "images": []
+ },
+ {
+  "date": "2026-11-16",
+  "title": {
+   "en": "Tidying up the curb",
+   "zh": "整理路边"
+  },
+  "body": {
+   "en": [
+    "I spaced out bins, hydrants and meters and cleaned up the short bits of road that stopped just past an intersection. I also separated the drive-through roofs and signs so they sit on their own buildings.",
+    "Storefront lettering stays in English as you walk around the city."
+   ],
+   "zh": [
+    "我把垃圾桶、消防栓和停车计时器拉开了一些，也修了路口边那些刚伸出去就断掉的短路。",
+    "我还把得来速各处的屋顶和招牌分开，让它们各自待在该在的建筑上。逛街时看到的店面招牌都用英文。"
+   ]
+  },
+  "tags": [
+   "world",
+   "buildings"
+  ],
+  "images": []
+ },
+ {
+  "date": "2026-11-13",
+  "title": {
+   "en": "Signs you can read from either side",
+   "zh": "两面都能读的招牌"
+  },
+  "body": {
+   "en": [
+    "I fixed street signs that read backward from behind and filled in walls and floors on buildings in the distance. Openings in the parking garage now show the deck and its lights.",
+    "I also tidied shrub beds, made the fuel prompt easier to find and fixed where your character stands or sits at a few interaction spots."
+   ],
+   "zh": [
+    "我修了从背面看会反着念的街边招牌，也补上了远处建筑的墙面和楼层。现在从停车楼的开口看进去，能看到车位和灯。",
+    "我还整理了灌木花坛，让加油提示更好找，并修了几个互动点的站位和坐姿。"
+   ]
+  },
+  "tags": [
+   "world",
+   "buildings",
+   "interactions"
+  ],
+  "images": []
+ },
+ {
+  "date": "2026-11-12",
+  "title": {
+   "en": "Wheels that turn on their own axles",
+   "zh": "车轮绕着轮轴转"
+  },
+  "body": {
+   "en": [
+    "I rebuilt the wheels around their axles so they roll in place and clear the wheel arches. The front wheels also steer more steadily as you watch another driver turn."
+   ],
+   "zh": [
+    "我按轮轴重新做了车轮，让它们滚起来不偏，也不会蹭到轮拱。看别人的车拐弯时，前轮也转得更稳了。"
+   ]
+  },
+  "tags": [
+   "world",
+   "systems"
+  ],
+  "images": []
+ },
+ {
+  "date": "2026-11-12",
+  "title": {
+   "en": "From the pump to the beach",
+   "zh": "从加油机到沙滩"
+  },
+  "body": {
+   "en": [
+    "I moved refueling to the pump and tidied the service lots, lawns and parking garage. I fixed patches of beach sand, the seat by the skate area and how rain shows up on the pond."
+   ],
+   "zh": [
+    "我把加油移到了加油机旁，也整理了汽车服务区、草坪和停车楼。我还修了几处沙滩的沙地、滑板区边的座位，以及雨落在池塘上的效果。"
+   ]
+  },
+  "tags": [
+   "world",
+   "interactions"
+  ],
+  "images": [],
+  "video": {
+   "src": "assets/diary/beach-afternoon.mp4",
+   "poster": "assets/diary/beach-afternoon-poster.webp",
+   "w": 1920,
+   "h": 1080,
+   "alt": {
+    "en": "Gameplay of a walk down the bluff steps to the beach in the late afternoon",
+    "zh": "实机画面：傍晚沿海崖石阶走到沙滩"
+   }
+  }
+ },
+ {
+  "date": "2026-11-12",
+  "title": {
+   "en": "Easing into a walk",
+   "zh": "起步和停步都顺了一点"
+  },
+  "body": {
+   "en": [
+    "I softened the way your character sets off, stops and turns. Steps follow the ground you cover, and more of the street can load a bit at a time as you move."
+   ],
+   "zh": [
+    "我把角色起步、停下和转身的动作调得柔和了一点。步子会跟着实际走过的距离调整，沿路的街景也可以分批加载。"
+   ]
+  },
+  "tags": [
+   "characters",
+   "systems"
+  ],
+  "images": []
+ },
+ {
+  "date": "2026-11-12",
+  "title": {
+   "en": "Parked cars along the curb",
+   "zh": "停在路边的车"
+  },
+  "body": {
+   "en": [
+    "I turned the parked cars along the shopping street so they line up with the curb."
+   ],
+   "zh": [
+    "我把购物街路边的停车方向调了调，让车身沿着路沿停放。"
+   ]
+  },
+  "tags": [
+   "world"
+  ],
+  "images": []
+ },
+ {
   "date": "2026-11-11",
   "title": {
    "en": "Mahjong from your own seat",

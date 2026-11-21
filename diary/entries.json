@@ -1,5 +1,46 @@
 [
  {
+  "date": "2026-11-20",
+  "title": {
+   "en": "Police arrive in LA",
+   "zh": "警察来到洛杉矶"
+  },
+  "body": {
+   "en": [
+    "I added a police station downtown. Reach three wanted stars and a patrol car comes out. If an officer arrests you, you'll be booked at the station. You can wait for release or pay bail to leave sooner.",
+    "I also smoothed out click-to-walk. Your character keeps walking through the turns on the way to where you clicked."
+   ],
+   "zh": [
+    "我在市中心加了一座警察局。通缉升到三星时，巡逻车就会出动。如果被警察逮捕，你会被带到警察局登记。你可以等到释放，也可以交保释金提前离开。",
+    "我也把点击走路改得更顺了。角色会沿着路线走到你点击的地方，途中转弯时会继续往前走。"
+   ]
+  },
+  "tags": [
+   "systems",
+   "buildings"
+  ],
+  "images": [
+   {
+    "src": "assets/diary/r19-police-station.webp",
+    "w": 1440,
+    "h": 900,
+    "alt": {
+     "en": "A street view of the police station with two patrol cars in their bays and an officer by the steps",
+     "zh": "从街上看警察局，两辆巡逻车停在车位里，一名警察站在台阶前"
+    }
+   },
+   {
+    "src": "assets/diary/r19-arrest.webp",
+    "w": 1440,
+    "h": 900,
+    "alt": {
+     "en": "An officer arrests a player by a crosswalk while the Hands up prompt is still visible",
+     "zh": "警察正在人行横道旁逮捕玩家，画面上仍显示举起双手的提示"
+    }
+   }
+  ]
+ },
+ {
   "date": "2026-11-17",
   "title": {
    "en": "A drive above the city",
